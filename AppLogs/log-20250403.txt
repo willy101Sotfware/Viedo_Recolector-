@@ -1,0 +1,1100 @@
+2025-04-03 10:09:56.602 [INF] Iniciando aplicación Video Recolector
+2025-04-03 10:09:56.949 [INF] Now listening on: https://localhost:7194
+2025-04-03 10:09:56.954 [INF] Now listening on: http://localhost:5238
+2025-04-03 10:09:57.097 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 10:09:57.498 [INF] Hosting environment: Development
+2025-04-03 10:09:57.499 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-03 10:09:58.431 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-04-03 10:09:58.709 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 288.1051ms
+2025-04-03 10:09:58.739 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-03 10:09:58.739 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-04-03 10:09:58.758 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 19.2818ms
+2025-04-03 10:09:58.859 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 120.0667ms
+2025-04-03 10:09:58.934 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-04-03 10:09:58.953 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.4349ms
+2025-04-03 10:10:05.136 [INF] Request starting HTTP/2 POST https://localhost:7194/api/Camera/start - null 0
+2025-04-03 10:10:05.150 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:10:05.183 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-03 10:10:05.380 [INF] Cámara detectada en puerto 0 usando DirectShow
+2025-04-03 10:10:05.382 [INF] Capacidades de la cámara: 640x480 @ 0fps
+2025-04-03 10:10:05.613 [INF] Intentando configurar resolución 1280x720
+2025-04-03 10:10:06.052 [INF] Intentando configurar resolución 800x600
+2025-04-03 10:10:06.504 [INF] Intentando configurar resolución 640x480
+2025-04-03 10:10:06.968 [INF] Configuración exitosa: 640x480
+2025-04-03 10:10:06.970 [INF] Resolución final de la cámara: 640x480 @ 30.00003000003fps
+2025-04-03 10:10:07.503 [INF] Iniciando grabación en C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\wwwroot\videos\2025\April\Semana14\Thursday\video_10_10_07.mp4 con calidad alta
+2025-04-03 10:10:08.550 [INF] Grabando video: 25 frames, 24.0 fps promedio
+2025-04-03 10:10:09.580 [INF] Grabando video: 51 frames, 24.6 fps promedio
+2025-04-03 10:10:10.597 [INF] Grabando video: 76 frames, 24.6 fps promedio
+2025-04-03 10:10:11.631 [INF] Grabando video: 102 frames, 24.7 fps promedio
+2025-04-03 10:10:12.651 [INF] Grabando video: 127 frames, 24.7 fps promedio
+2025-04-03 10:10:13.699 [INF] Grabando video: 153 frames, 24.7 fps promedio
+2025-04-03 10:10:15.221 [INF] Grabando video: 154 frames, 20.0 fps promedio
+2025-04-03 10:10:16.228 [INF] Grabando video: 179 frames, 20.5 fps promedio
+2025-04-03 10:10:17.259 [INF] Grabando video: 204 frames, 20.9 fps promedio
+2025-04-03 10:10:18.276 [INF] Grabando video: 228 frames, 21.2 fps promedio
+2025-04-03 10:10:19.319 [INF] Grabando video: 253 frames, 21.4 fps promedio
+2025-04-03 10:10:20.324 [INF] Grabando video: 278 frames, 21.7 fps promedio
+2025-04-03 10:10:21.353 [INF] Grabando video: 304 frames, 22.0 fps promedio
+2025-04-03 10:10:22.373 [INF] Grabando video: 329 frames, 22.1 fps promedio
+2025-04-03 10:10:23.427 [INF] Grabando video: 355 frames, 22.3 fps promedio
+2025-04-03 10:10:24.456 [INF] Grabando video: 381 frames, 22.5 fps promedio
+2025-04-03 10:10:25.475 [INF] Grabando video: 406 frames, 22.6 fps promedio
+2025-04-03 10:10:26.502 [INF] Grabando video: 432 frames, 22.7 fps promedio
+2025-04-03 10:10:27.523 [INF] Grabando video: 457 frames, 22.8 fps promedio
+2025-04-03 10:10:28.555 [INF] Grabando video: 483 frames, 22.9 fps promedio
+2025-04-03 10:10:29.571 [INF] Grabando video: 508 frames, 23.0 fps promedio
+2025-04-03 10:10:30.573 [INF] Grabando video: 533 frames, 23.1 fps promedio
+2025-04-03 10:10:31.619 [INF] Grabando video: 559 frames, 23.2 fps promedio
+2025-04-03 10:10:32.650 [INF] Grabando video: 585 frames, 23.3 fps promedio
+2025-04-03 10:10:33.670 [INF] Grabando video: 610 frames, 23.3 fps promedio
+2025-04-03 10:10:34.702 [INF] Grabando video: 636 frames, 23.4 fps promedio
+2025-04-03 10:10:35.718 [INF] Grabando video: 661 frames, 23.4 fps promedio
+2025-04-03 10:10:36.771 [INF] Grabando video: 687 frames, 23.5 fps promedio
+2025-04-03 10:10:37.799 [INF] Grabando video: 713 frames, 23.5 fps promedio
+2025-04-03 10:10:38.820 [INF] Grabando video: 738 frames, 23.6 fps promedio
+2025-04-03 10:10:39.847 [INF] Grabando video: 764 frames, 23.6 fps promedio
+2025-04-03 10:10:40.867 [INF] Grabando video: 789 frames, 23.7 fps promedio
+2025-04-03 10:10:41.898 [INF] Grabando video: 815 frames, 23.7 fps promedio
+2025-04-03 10:10:42.915 [INF] Grabando video: 840 frames, 23.7 fps promedio
+2025-04-03 10:10:43.946 [INF] Grabando video: 866 frames, 23.8 fps promedio
+2025-04-03 10:10:44.970 [INF] Grabando video: 891 frames, 23.8 fps promedio
+2025-04-03 10:10:45.998 [INF] Grabando video: 917 frames, 23.8 fps promedio
+2025-04-03 10:10:47.012 [INF] Grabando video: 942 frames, 23.8 fps promedio
+2025-04-03 10:10:48.046 [INF] Grabando video: 968 frames, 23.9 fps promedio
+2025-04-03 10:10:49.062 [INF] Grabando video: 993 frames, 23.9 fps promedio
+2025-04-03 10:10:50.115 [INF] Grabando video: 1019 frames, 23.9 fps promedio
+2025-04-03 10:10:51.144 [INF] Grabando video: 1044 frames, 23.9 fps promedio
+2025-04-03 10:10:52.163 [INF] Grabando video: 1069 frames, 23.9 fps promedio
+2025-04-03 10:10:53.192 [INF] Grabando video: 1095 frames, 24.0 fps promedio
+2025-04-03 10:10:54.212 [INF] Grabando video: 1120 frames, 24.0 fps promedio
+2025-04-03 10:10:55.243 [INF] Grabando video: 1146 frames, 24.0 fps promedio
+2025-04-03 10:10:56.259 [INF] Grabando video: 1171 frames, 24.0 fps promedio
+2025-04-03 10:10:57.291 [INF] Grabando video: 1197 frames, 24.0 fps promedio
+2025-04-03 10:10:58.314 [INF] Grabando video: 1222 frames, 24.1 fps promedio
+2025-04-03 10:10:58.887 [INF] Request starting HTTP/2 POST https://localhost:7194/api/Camera/stop - null 0
+2025-04-03 10:10:58.897 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:10:58.905 [INF] Route matched with {action = "StopCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StopCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-03 10:10:58.912 [INF] Deteniendo grabación...
+2025-04-03 10:10:58.948 [INF] Grabación finalizada. Total frames: 1237
+2025-04-03 10:10:58.960 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-03 10:10:58.973 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 53783.9716ms
+2025-04-03 10:10:58.979 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:10:58.982 [INF] Request finished HTTP/2 POST https://localhost:7194/api/Camera/start - 200 null application/json; charset=utf-8 53846.5923ms
+2025-04-03 10:10:59.016 [INF] Cerrando archivo de video: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\wwwroot\videos\2025\April\Semana14\Thursday\video_10_10_07.mp4
+2025-04-03 10:10:59.046 [INF] Cerrando cámara
+2025-04-03 10:10:59.120 [INF] Grabación detenida completamente
+2025-04-03 10:10:59.121 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-03 10:10:59.124 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR) in 214.9426ms
+2025-04-03 10:10:59.126 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:10:59.128 [INF] Request finished HTTP/2 POST https://localhost:7194/api/Camera/stop - 200 null application/json; charset=utf-8 241.7973ms
+2025-04-03 10:11:37.889 [INF] Iniciando aplicación Video Recolector
+2025-04-03 10:11:38.207 [INF] Now listening on: https://localhost:7194
+2025-04-03 10:11:38.212 [INF] Now listening on: http://localhost:5238
+2025-04-03 10:11:38.269 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 10:11:38.270 [INF] Hosting environment: Development
+2025-04-03 10:11:38.272 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-03 10:11:38.797 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-04-03 10:11:39.001 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 212.7979ms
+2025-04-03 10:11:39.023 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-04-03 10:11:39.023 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-03 10:11:39.035 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 12.9093ms
+2025-04-03 10:11:39.064 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.7111ms
+2025-04-03 10:11:39.132 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-04-03 10:11:39.141 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.1095ms
+2025-04-03 10:11:45.091 [INF] Request starting HTTP/2 POST https://localhost:7194/api/Camera/start - null 0
+2025-04-03 10:11:45.105 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:11:45.130 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-03 10:11:45.316 [INF] Cámara detectada en puerto 0 usando DirectShow
+2025-04-03 10:11:45.320 [INF] Capacidades de la cámara: 640x480 @ 0fps
+2025-04-03 10:11:45.533 [INF] Intentando configurar resolución 1280x720
+2025-04-03 10:11:45.957 [INF] Intentando configurar resolución 800x600
+2025-04-03 10:11:46.378 [INF] Intentando configurar resolución 640x480
+2025-04-03 10:11:46.819 [INF] Configuración exitosa: 640x480
+2025-04-03 10:11:46.821 [INF] Resolución final de la cámara: 640x480 @ 30.00003000003fps
+2025-04-03 10:11:47.030 [INF] Iniciando grabación en C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\wwwroot\videos\2025\April\Semana14\Thursday\video_10_11_47.avi usando DIVX
+2025-04-03 10:11:48.063 [INF] Grabando video: 25 frames, 24.4 fps promedio
+2025-04-03 10:11:49.086 [INF] Grabando video: 50 frames, 24.4 fps promedio
+2025-04-03 10:11:50.092 [INF] Grabando video: 75 frames, 24.5 fps promedio
+2025-04-03 10:11:51.095 [INF] Grabando video: 100 frames, 24.6 fps promedio
+2025-04-03 10:11:52.130 [INF] Grabando video: 126 frames, 24.7 fps promedio
+2025-04-03 10:11:53.136 [INF] Grabando video: 149 frames, 24.4 fps promedio
+2025-04-03 10:11:54.152 [INF] Grabando video: 174 frames, 24.4 fps promedio
+2025-04-03 10:11:55.188 [INF] Grabando video: 200 frames, 24.5 fps promedio
+2025-04-03 10:11:56.197 [INF] Grabando video: 225 frames, 24.6 fps promedio
+2025-04-03 10:11:57.200 [INF] Grabando video: 250 frames, 24.6 fps promedio
+2025-04-03 10:11:58.206 [INF] Grabando video: 275 frames, 24.6 fps promedio
+2025-04-03 10:11:59.248 [INF] Grabando video: 301 frames, 24.6 fps promedio
+2025-04-03 10:12:00.249 [INF] Grabando video: 326 frames, 24.7 fps promedio
+2025-04-03 10:12:01.253 [INF] Grabando video: 351 frames, 24.7 fps promedio
+2025-04-03 10:12:02.270 [INF] Grabando video: 376 frames, 24.7 fps promedio
+2025-04-03 10:12:03.313 [INF] Grabando video: 402 frames, 24.7 fps promedio
+2025-04-03 10:12:04.314 [INF] Grabando video: 427 frames, 24.7 fps promedio
+2025-04-03 10:12:05.321 [INF] Grabando video: 452 frames, 24.7 fps promedio
+2025-04-03 10:12:06.356 [INF] Grabando video: 478 frames, 24.7 fps promedio
+2025-04-03 10:12:07.358 [INF] Grabando video: 503 frames, 24.7 fps promedio
+2025-04-03 10:12:08.373 [INF] Grabando video: 528 frames, 24.7 fps promedio
+2025-04-03 10:12:08.447 [INF] Request starting HTTP/2 POST https://localhost:7194/api/Camera/stop - null 0
+2025-04-03 10:12:08.453 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:12:08.461 [INF] Route matched with {action = "StopCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StopCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-03 10:12:08.466 [INF] Deteniendo grabación...
+2025-04-03 10:12:08.481 [INF] Grabación finalizada. Total frames: 530
+2025-04-03 10:12:08.491 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-03 10:12:08.505 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 23368.0364ms
+2025-04-03 10:12:08.508 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:12:08.509 [INF] Request finished HTTP/2 POST https://localhost:7194/api/Camera/start - 200 null application/json; charset=utf-8 23417.8364ms
+2025-04-03 10:12:08.568 [INF] Cerrando archivo de video: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\wwwroot\videos\2025\April\Semana14\Thursday\video_10_11_47.avi
+2025-04-03 10:12:08.585 [INF] Cerrando cámara
+2025-04-03 10:12:08.668 [INF] Grabación detenida completamente
+2025-04-03 10:12:08.670 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-03 10:12:08.673 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR) in 208.3687ms
+2025-04-03 10:12:08.675 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:12:08.678 [INF] Request finished HTTP/2 POST https://localhost:7194/api/Camera/stop - 200 null application/json; charset=utf-8 230.7775ms
+2025-04-03 10:15:29.960 [INF] Iniciando aplicación Video Recolector
+2025-04-03 10:15:30.360 [INF] Now listening on: https://localhost:7194
+2025-04-03 10:15:30.366 [INF] Now listening on: http://localhost:5238
+2025-04-03 10:15:30.421 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 10:15:30.423 [INF] Hosting environment: Development
+2025-04-03 10:15:30.424 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-03 10:15:30.864 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-04-03 10:15:31.222 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 363.3167ms
+2025-04-03 10:15:31.247 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-04-03 10:15:31.247 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-03 10:15:31.265 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 18.4611ms
+2025-04-03 10:15:31.295 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.4295ms
+2025-04-03 10:15:31.364 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-04-03 10:15:31.376 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.7878ms
+2025-04-03 10:15:36.995 [INF] Request starting HTTP/2 POST https://localhost:7194/api/Camera/start - null 0
+2025-04-03 10:15:37.009 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:15:37.037 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-03 10:15:37.227 [INF] Cámara detectada en puerto 0 usando DirectShow
+2025-04-03 10:15:37.230 [INF] Capacidades de la cámara: 640x480 @ 0fps
+2025-04-03 10:15:37.440 [INF] Intentando configurar resolución 1920x1080
+2025-04-03 10:15:37.884 [INF] Intentando configurar resolución 1280x720
+2025-04-03 10:15:38.342 [INF] Intentando configurar resolución 800x600
+2025-04-03 10:15:38.864 [ERR] Error al iniciar la cámara en puerto 0
+System.Exception: No se pudo configurar ninguna resolución soportada
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 152
+2025-04-03 10:15:39.053 [ERR] Error al iniciar la cámara
+System.Exception: No se pudo configurar ninguna resolución soportada
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 152
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-03 10:15:39.064 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-03 10:15:39.076 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 2029.4577ms
+2025-04-03 10:15:39.079 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:15:39.083 [INF] Request finished HTTP/2 POST https://localhost:7194/api/Camera/start - 500 null application/json; charset=utf-8 2087.4118ms
+2025-04-03 10:16:57.542 [INF] Iniciando aplicación Video Recolector
+2025-04-03 10:16:57.898 [INF] Now listening on: https://localhost:7194
+2025-04-03 10:16:57.903 [INF] Now listening on: http://localhost:5238
+2025-04-03 10:16:58.147 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 10:16:58.148 [INF] Hosting environment: Development
+2025-04-03 10:16:58.149 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-03 10:16:58.513 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-04-03 10:16:58.760 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 252.7726ms
+2025-04-03 10:16:58.786 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-03 10:16:58.786 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-04-03 10:16:58.808 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 18.438ms
+2025-04-03 10:16:58.854 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 67.5378ms
+2025-04-03 10:16:58.925 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-04-03 10:16:58.938 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.7558ms
+2025-04-03 10:17:04.314 [INF] Request starting HTTP/2 POST https://localhost:7194/api/Camera/start - null 0
+2025-04-03 10:17:04.338 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:17:04.371 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-03 10:17:04.576 [INF] Cámara detectada en puerto 0 usando DirectShow
+2025-04-03 10:17:04.577 [INF] Capacidades de la cámara: 640x480 @ 0fps
+2025-04-03 10:17:05.259 [INF] Resolución final de la cámara: 640x480 @ 30.00003000003fps
+2025-04-03 10:17:05.453 [INF] Iniciando grabación en C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\wwwroot\videos\2025\April\Semana14\Thursday\video_10_17_05.avi usando DIVX con upscaling
+2025-04-03 10:17:06.777 [INF] Grabando video: 1 frames, 0.8 fps promedio
+2025-04-03 10:17:08.746 [INF] Grabando video: 3 frames, 0.9 fps promedio
+2025-04-03 10:17:10.573 [INF] Grabando video: 5 frames, 1.0 fps promedio
+2025-04-03 10:17:11.581 [INF] Grabando video: 6 frames, 1.0 fps promedio
+2025-04-03 10:17:13.291 [INF] Grabando video: 8 frames, 1.0 fps promedio
+2025-04-03 10:17:15.038 [INF] Grabando video: 10 frames, 1.0 fps promedio
+2025-04-03 10:17:16.764 [INF] Grabando video: 12 frames, 1.1 fps promedio
+2025-04-03 10:17:18.451 [INF] Grabando video: 14 frames, 1.1 fps promedio
+2025-04-03 10:17:20.111 [INF] Grabando video: 16 frames, 1.1 fps promedio
+2025-04-03 10:17:21.865 [INF] Grabando video: 18 frames, 1.1 fps promedio
+2025-04-03 10:17:23.668 [INF] Grabando video: 20 frames, 1.1 fps promedio
+2025-04-03 10:17:25.416 [INF] Grabando video: 22 frames, 1.1 fps promedio
+2025-04-03 10:17:27.169 [INF] Grabando video: 24 frames, 1.1 fps promedio
+2025-04-03 10:17:28.949 [INF] Grabando video: 26 frames, 1.1 fps promedio
+2025-04-03 10:17:29.606 [INF] Request starting HTTP/2 POST https://localhost:7194/api/Camera/stop - null 0
+2025-04-03 10:17:29.611 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:17:29.622 [INF] Route matched with {action = "StopCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StopCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-03 10:17:29.628 [INF] Deteniendo grabación...
+2025-04-03 10:17:29.730 [INF] Cerrando archivo de video: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\wwwroot\videos\2025\April\Semana14\Thursday\video_10_17_05.avi
+2025-04-03 10:17:29.735 [INF] Cerrando cámara
+2025-04-03 10:17:29.811 [INF] Grabación detenida completamente
+2025-04-03 10:17:29.821 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-03 10:17:29.832 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR) in 204.1019ms
+2025-04-03 10:17:29.836 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:17:29.839 [INF] Request finished HTTP/2 POST https://localhost:7194/api/Camera/stop - 200 null application/json; charset=utf-8 233.5408ms
+2025-04-03 10:21:34.190 [INF] Iniciando aplicación Video Recolector
+2025-04-03 10:21:34.553 [INF] Now listening on: https://localhost:7194
+2025-04-03 10:21:34.556 [INF] Now listening on: http://localhost:5238
+2025-04-03 10:21:34.627 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 10:21:34.629 [INF] Hosting environment: Development
+2025-04-03 10:21:34.630 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-03 10:21:34.831 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-04-03 10:21:35.025 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 198.8302ms
+2025-04-03 10:21:35.047 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-03 10:21:35.047 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-04-03 10:21:35.061 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 14.4201ms
+2025-04-03 10:21:35.123 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.9392ms
+2025-04-03 10:21:35.197 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-04-03 10:21:35.209 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.0516ms
+2025-04-03 10:21:56.872 [INF] Request starting HTTP/2 POST https://localhost:7194/api/Camera/start - null 0
+2025-04-03 10:21:56.886 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:21:56.909 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-03 10:21:57.099 [INF] Cámara detectada en puerto 0
+2025-04-03 10:21:57.746 [INF] Cámara OK - Frame size: 640x480
+2025-04-03 10:21:57.756 [INF] Iniciando grabación en C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\wwwroot\videos\2025\April\Semana14\Thursday\video_10_21_57.wmv
+2025-04-03 10:21:59.207 [INF] Frames grabados: 30
+2025-04-03 10:22:00.695 [INF] Frames grabados: 60
+2025-04-03 10:22:02.188 [INF] Frames grabados: 90
+2025-04-03 10:22:03.677 [INF] Frames grabados: 120
+2025-04-03 10:22:05.166 [INF] Frames grabados: 150
+2025-04-03 10:22:06.657 [INF] Frames grabados: 180
+2025-04-03 10:22:08.150 [INF] Frames grabados: 210
+2025-04-03 10:22:09.640 [INF] Frames grabados: 240
+2025-04-03 10:22:11.128 [INF] Frames grabados: 270
+2025-04-03 10:22:12.617 [INF] Frames grabados: 300
+2025-04-03 10:22:14.108 [INF] Frames grabados: 330
+2025-04-03 10:22:15.605 [INF] Frames grabados: 360
+2025-04-03 10:22:17.095 [INF] Frames grabados: 390
+2025-04-03 10:22:18.411 [INF] Request starting HTTP/2 POST https://localhost:7194/api/Camera/stop - null 0
+2025-04-03 10:22:18.417 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:22:18.427 [INF] Route matched with {action = "StopCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StopCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-03 10:22:18.433 [INF] Deteniendo grabación...
+2025-04-03 10:22:18.435 [INF] Grabación finalizada. Total frames: 416
+2025-04-03 10:22:18.445 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-03 10:22:18.458 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 21541.2593ms
+2025-04-03 10:22:18.461 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:22:18.464 [INF] Request finished HTTP/2 POST https://localhost:7194/api/Camera/start - 200 null application/json; charset=utf-8 21592.1654ms
+2025-04-03 10:22:18.537 [INF] Cerrando archivo de video: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\wwwroot\videos\2025\April\Semana14\Thursday\video_10_21_57.wmv
+2025-04-03 10:22:18.543 [INF] Cerrando cámara
+2025-04-03 10:22:18.623 [INF] Grabación detenida completamente. Total frames: 416
+2025-04-03 10:22:18.626 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-03 10:22:18.631 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR) in 200.2957ms
+2025-04-03 10:22:18.634 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:22:18.636 [INF] Request finished HTTP/2 POST https://localhost:7194/api/Camera/stop - 200 null application/json; charset=utf-8 225.9762ms
+2025-04-03 10:26:11.976 [INF] Iniciando aplicación Video Recolector
+2025-04-03 10:26:12.328 [INF] Now listening on: https://localhost:7194
+2025-04-03 10:26:12.332 [INF] Now listening on: http://localhost:5238
+2025-04-03 10:26:12.419 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 10:26:12.420 [INF] Hosting environment: Development
+2025-04-03 10:26:12.422 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-03 10:26:12.964 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/index.html - null null
+2025-04-03 10:26:13.150 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/index.html - 200 null text/html;charset=utf-8 193.0339ms
+2025-04-03 10:26:13.174 [INF] Request starting HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-03 10:26:13.174 [INF] Request starting HTTP/2 GET https://localhost:7194/_vs/browserLink - null null
+2025-04-03 10:26:13.183 [INF] Request finished HTTP/2 GET https://localhost:7194/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 9.7592ms
+2025-04-03 10:26:13.224 [INF] Request finished HTTP/2 GET https://localhost:7194/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.2375ms
+2025-04-03 10:26:13.289 [INF] Request starting HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - null null
+2025-04-03 10:26:13.299 [INF] Request finished HTTP/2 GET https://localhost:7194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.7829ms
+2025-04-03 10:26:22.970 [INF] Request starting HTTP/2 POST https://localhost:7194/api/Camera/start - null 0
+2025-04-03 10:26:22.983 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:26:23.011 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-03 10:26:23.416 [INF] Cámara detectada en puerto 0 - Resolución: 640x480 @ 30fps
+2025-04-03 10:26:23.864 [INF] Usando resolución: 640x480 @ 30fps
+2025-04-03 10:26:24.076 [INF] Iniciando grabación en C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\wwwroot\videos\2025\April\Semana14\Thursday\video_10_26_24.avi
+2025-04-03 10:26:25.349 [INF] Frames grabados: 30
+2025-04-03 10:26:26.534 [INF] Frames grabados: 60
+2025-04-03 10:26:27.751 [INF] Frames grabados: 90
+2025-04-03 10:26:28.974 [INF] Frames grabados: 120
+2025-04-03 10:26:30.088 [INF] Frames grabados: 150
+2025-04-03 10:26:31.302 [INF] Frames grabados: 180
+2025-04-03 10:26:32.486 [INF] Frames grabados: 210
+2025-04-03 10:26:33.702 [INF] Frames grabados: 240
+2025-04-03 10:26:34.918 [INF] Frames grabados: 270
+2025-04-03 10:26:36.101 [INF] Frames grabados: 300
+2025-04-03 10:26:37.325 [INF] Frames grabados: 330
+2025-04-03 10:26:38.533 [INF] Frames grabados: 360
+2025-04-03 10:26:39.751 [INF] Frames grabados: 390
+2025-04-03 10:26:40.934 [INF] Frames grabados: 420
+2025-04-03 10:26:42.152 [INF] Frames grabados: 450
+2025-04-03 10:26:43.368 [INF] Frames grabados: 480
+2025-04-03 10:26:44.552 [INF] Frames grabados: 510
+2025-04-03 10:26:45.766 [INF] Frames grabados: 540
+2025-04-03 10:26:46.981 [INF] Frames grabados: 570
+2025-04-03 10:26:48.165 [INF] Frames grabados: 600
+2025-04-03 10:26:49.382 [INF] Frames grabados: 630
+2025-04-03 10:26:50.597 [INF] Frames grabados: 660
+2025-04-03 10:26:51.781 [INF] Frames grabados: 690
+2025-04-03 10:26:52.997 [INF] Frames grabados: 720
+2025-04-03 10:26:54.215 [INF] Frames grabados: 750
+2025-04-03 10:26:55.270 [INF] Request starting HTTP/2 POST https://localhost:7194/api/Camera/stop - null 0
+2025-04-03 10:26:55.275 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:26:55.280 [INF] Route matched with {action = "StopCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StopCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-03 10:26:55.288 [INF] Deteniendo grabación...
+2025-04-03 10:26:55.303 [INF] Grabación finalizada. Total frames: 777
+2025-04-03 10:26:55.312 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-03 10:26:55.324 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 32305.9651ms
+2025-04-03 10:26:55.327 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:26:55.330 [INF] Request finished HTTP/2 POST https://localhost:7194/api/Camera/start - 200 null application/json; charset=utf-8 32360.4613ms
+2025-04-03 10:26:55.390 [INF] Cerrando archivo de video: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\wwwroot\videos\2025\April\Semana14\Thursday\video_10_26_24.avi
+2025-04-03 10:26:55.393 [INF] Cerrando cámara
+2025-04-03 10:26:55.503 [INF] Grabación detenida completamente. Total frames: 777
+2025-04-03 10:26:55.505 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-03 10:26:55.507 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR) in 221.7409ms
+2025-04-03 10:26:55.509 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:26:55.510 [INF] Request finished HTTP/2 POST https://localhost:7194/api/Camera/stop - 200 null application/json; charset=utf-8 239.9672ms
+2025-04-03 10:35:57.604 [INF] Iniciando aplicación Video Recolector
+2025-04-03 10:35:57.836 [WRN] Overriding address(es) 'http://localhost:7194, https://localhost:7194'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-03 10:35:57.925 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://127.0.0.1:7194: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.EndpointsStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-04-03 10:35:58.029 [FTL] La aplicación terminó inesperadamente
+System.IO.IOException: Failed to bind to address https://127.0.0.1:7194: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.EndpointsStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Program.cs:line 61
+2025-04-03 10:36:17.577 [INF] Iniciando aplicación Video Recolector
+2025-04-03 10:36:17.905 [WRN] Overriding address(es) 'http://localhost:7194, https://localhost:7194'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-03 10:36:17.967 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://127.0.0.1:7194: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.EndpointsStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-04-03 10:36:18.021 [FTL] La aplicación terminó inesperadamente
+System.IO.IOException: Failed to bind to address https://127.0.0.1:7194: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.EndpointsStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Program.cs:line 61
+2025-04-03 10:37:36.293 [INF] Iniciando aplicación Video Recolector
+2025-04-03 10:37:36.620 [WRN] Overriding address(es) 'http://localhost:7194, https://localhost:7194'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-03 10:37:36.701 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://127.0.0.1:7194: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.EndpointsStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-04-03 10:37:36.752 [FTL] La aplicación terminó inesperadamente
+System.IO.IOException: Failed to bind to address https://127.0.0.1:7194: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.EndpointsStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Program.cs:line 95
+2025-04-03 10:37:38.891 [INF] Iniciando aplicación Video Recolector
+2025-04-03 10:37:39.056 [WRN] Overriding address(es) 'http://localhost:7194'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-03 10:37:39.101 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://127.0.0.1:7194: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.EndpointsStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-04-03 10:37:39.121 [FTL] La aplicación terminó inesperadamente
+System.IO.IOException: Failed to bind to address https://127.0.0.1:7194: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.EndpointsStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Program.cs:line 95
+2025-04-03 10:38:05.654 [INF] Iniciando aplicación Video Recolector
+2025-04-03 10:38:05.864 [WRN] Overriding address(es) 'http://localhost:7194'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-03 10:38:05.926 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://127.0.0.1:7194: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.EndpointsStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-04-03 10:38:05.952 [FTL] La aplicación terminó inesperadamente
+System.IO.IOException: Failed to bind to address https://127.0.0.1:7194: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.EndpointsStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Program.cs:line 95
+2025-04-03 10:38:23.580 [INF] Iniciando aplicación Video Recolector
+2025-04-03 10:38:23.831 [WRN] Overriding address(es) 'http://localhost:7194, https://localhost:7194'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-03 10:38:23.914 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://127.0.0.1:7194: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.EndpointsStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-04-03 10:38:23.961 [FTL] La aplicación terminó inesperadamente
+System.IO.IOException: Failed to bind to address https://127.0.0.1:7194: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.EndpointsStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Program.cs:line 95
+2025-04-03 10:39:32.793 [INF] Iniciando aplicación Video Recolector
+2025-04-03 10:39:33.068 [WRN] Overriding address(es) 'http://localhost:7194, https://localhost:7194'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-03 10:39:33.132 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://127.0.0.1:7194: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.EndpointsStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-04-03 10:39:33.188 [FTL] La aplicación terminó inesperadamente
+System.IO.IOException: Failed to bind to address https://127.0.0.1:7194: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.EndpointsStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Program.cs:line 96
+2025-04-03 10:39:35.282 [INF] Iniciando aplicación Video Recolector
+2025-04-03 10:39:35.429 [WRN] Overriding address(es) 'http://localhost:7194'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-03 10:39:35.490 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://127.0.0.1:7194: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.EndpointsStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-04-03 10:39:35.519 [FTL] La aplicación terminó inesperadamente
+System.IO.IOException: Failed to bind to address https://127.0.0.1:7194: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.EndpointsStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Program.cs:line 96
+2025-04-03 10:40:14.363 [INF] Iniciando aplicación Video Recolector
+2025-04-03 10:40:14.586 [WRN] Overriding address(es) 'http://localhost:7194, https://localhost:7194'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-03 10:40:14.656 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://127.0.0.1:7194: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.EndpointsStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-04-03 10:40:14.712 [FTL] La aplicación terminó inesperadamente
+System.IO.IOException: Failed to bind to address https://127.0.0.1:7194: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.EndpointsStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Program.cs:line 96
+2025-04-03 10:41:56.289 [INF] Iniciando aplicación Video Recolector
+2025-04-03 10:41:56.476 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-03 10:41:56.530 [INF] Now listening on: http://localhost:5000
+2025-04-03 10:41:56.589 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 10:41:56.591 [INF] Hosting environment: Development
+2025-04-03 10:41:56.592 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-03 10:41:56.848 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger - null null
+2025-04-03 10:41:57.053 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger - 301 0 null 214.7623ms
+2025-04-03 10:41:57.058 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-04-03 10:41:57.134 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 75.9138ms
+2025-04-03 10:41:57.162 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - null null
+2025-04-03 10:41:57.163 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js - null null
+2025-04-03 10:41:57.164 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - null null
+2025-04-03 10:41:57.163 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-03 10:41:57.163 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-03 10:41:57.189 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 26.5635ms
+2025-04-03 10:41:57.238 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-03 10:41:57.243 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-03 10:41:57.245 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - 200 144929 text/css 82.5937ms
+2025-04-03 10:41:57.246 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 82.1849ms
+2025-04-03 10:41:57.246 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 83.6807ms
+2025-04-03 10:41:57.290 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-03 10:41:57.293 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 130.5133ms
+2025-04-03 10:41:57.522 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-04-03 10:41:57.534 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.0875ms
+2025-04-03 10:41:57.626 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - null null
+2025-04-03 10:41:57.629 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-03 10:41:57.631 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - 200 628 image/png 4.8844ms
+2025-04-03 10:42:01.508 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Camera/start - null 0
+2025-04-03 10:42:01.520 [INF] CORS policy execution successful.
+2025-04-03 10:42:01.537 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:42:01.561 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-03 10:42:01.566 [INF] Configuración cargada - VideoStoragePath: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\wwwroot\videos
+2025-04-03 10:42:01.900 [INF] Cámara detectada en puerto 0 - Resolución: 640x480 @ 30fps
+2025-04-03 10:42:01.959 [INF] Usando resolución: 640x480 @ 30fps
+2025-04-03 10:42:02.257 [INF] Iniciando grabación en C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\wwwroot\videos\2025\April\Semana14\Thursday\video_10_42_02.avi
+2025-04-03 10:42:03.607 [INF] Frames grabados: 30
+2025-04-03 10:42:04.978 [INF] Frames grabados: 60
+2025-04-03 10:42:06.341 [INF] Frames grabados: 90
+2025-04-03 10:42:07.676 [INF] Frames grabados: 120
+2025-04-03 10:42:09.077 [INF] Frames grabados: 150
+2025-04-03 10:42:10.439 [INF] Frames grabados: 180
+2025-04-03 10:42:11.846 [INF] Frames grabados: 210
+2025-04-03 10:42:13.243 [INF] Frames grabados: 240
+2025-04-03 10:42:14.627 [INF] Frames grabados: 270
+2025-04-03 10:42:16.028 [INF] Frames grabados: 300
+2025-04-03 10:42:17.421 [INF] Frames grabados: 330
+2025-04-03 10:42:18.812 [INF] Frames grabados: 360
+2025-04-03 10:42:20.192 [INF] Frames grabados: 390
+2025-04-03 10:42:21.628 [INF] Frames grabados: 420
+2025-04-03 10:42:22.972 [INF] Frames grabados: 450
+2025-04-03 10:42:24.376 [INF] Frames grabados: 480
+2025-04-03 10:42:25.762 [INF] Frames grabados: 510
+2025-04-03 10:42:27.151 [INF] Frames grabados: 540
+2025-04-03 10:42:28.575 [INF] Frames grabados: 570
+2025-04-03 10:42:29.937 [INF] Frames grabados: 600
+2025-04-03 10:42:31.304 [INF] Frames grabados: 630
+2025-04-03 10:42:32.729 [INF] Frames grabados: 660
+2025-04-03 10:42:34.063 [INF] Frames grabados: 690
+2025-04-03 10:42:35.420 [INF] Frames grabados: 720
+2025-04-03 10:42:36.791 [INF] Frames grabados: 750
+2025-04-03 10:42:38.175 [INF] Frames grabados: 780
+2025-04-03 10:42:39.558 [INF] Frames grabados: 810
+2025-04-03 10:42:40.955 [INF] Frames grabados: 840
+2025-04-03 10:42:42.328 [INF] Frames grabados: 870
+2025-04-03 10:42:43.706 [INF] Frames grabados: 900
+2025-04-03 10:42:45.172 [INF] Frames grabados: 930
+2025-04-03 10:42:45.925 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Camera/stop - null 0
+2025-04-03 10:42:45.929 [INF] CORS policy execution successful.
+2025-04-03 10:42:45.944 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:42:45.969 [INF] Route matched with {action = "StopCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StopCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-03 10:42:45.977 [INF] Deteniendo grabación...
+2025-04-03 10:42:46.006 [INF] Grabación finalizada. Total frames: 947
+2025-04-03 10:42:46.019 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-03 10:42:46.058 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 44486.8265ms
+2025-04-03 10:42:46.069 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:42:46.072 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Camera/start - 200 null application/json; charset=utf-8 44564.0875ms
+2025-04-03 10:42:46.083 [INF] Cerrando archivo de video: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\wwwroot\videos\2025\April\Semana14\Thursday\video_10_42_02.avi
+2025-04-03 10:42:46.088 [INF] Cerrando cámara
+2025-04-03 10:42:46.180 [INF] Grabación detenida completamente. Total frames: 947
+2025-04-03 10:42:46.184 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-03 10:42:46.187 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR) in 212.9569ms
+2025-04-03 10:42:46.191 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:42:46.195 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Camera/stop - 200 null application/json; charset=utf-8 270.8669ms
+2025-04-03 10:44:06.185 [INF] Iniciando aplicación Video Recolector
+2025-04-03 10:44:06.393 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-03 10:44:06.461 [INF] Now listening on: http://localhost:5000
+2025-04-03 10:44:06.514 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 10:44:06.516 [INF] Hosting environment: Development
+2025-04-03 10:44:06.517 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-03 10:44:06.759 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-04-03 10:44:06.991 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 238.4466ms
+2025-04-03 10:44:07.010 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-03 10:44:07.017 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - null null
+2025-04-03 10:44:07.017 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 7.5502ms
+2025-04-03 10:44:07.057 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.2384ms
+2025-04-03 10:44:07.228 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-04-03 10:44:07.239 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.6564ms
+2025-04-03 10:44:35.887 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Camera/start - null 0
+2025-04-03 10:44:35.899 [INF] CORS policy execution successful.
+2025-04-03 10:44:35.905 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:44:35.928 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-03 10:44:36.274 [INF] Cámara encontrada en puerto 0. Resolución: 640x480, FPS: 30
+2025-04-03 10:44:37.704 [INF] Frames grabados: 30
+2025-04-03 10:44:38.728 [INF] Frames grabados: 60
+2025-04-03 10:44:39.752 [INF] Frames grabados: 90
+2025-04-03 10:44:40.712 [INF] Frames grabados: 120
+2025-04-03 10:44:41.735 [INF] Frames grabados: 150
+2025-04-03 10:44:42.695 [INF] Frames grabados: 180
+2025-04-03 10:44:43.719 [INF] Frames grabados: 210
+2025-04-03 10:44:44.715 [INF] Frames grabados: 240
+2025-04-03 10:44:45.706 [INF] Frames grabados: 270
+2025-04-03 10:44:46.695 [INF] Frames grabados: 300
+2025-04-03 10:44:48.493 [INF] Frames grabados: 330
+2025-04-03 10:44:50.737 [INF] Frames grabados: 360
+2025-04-03 10:44:52.717 [INF] Frames grabados: 390
+2025-04-03 10:44:54.733 [INF] Frames grabados: 420
+2025-04-03 10:44:56.749 [INF] Frames grabados: 450
+2025-04-03 10:44:58.740 [INF] Frames grabados: 480
+2025-04-03 10:45:00.754 [INF] Frames grabados: 510
+2025-04-03 10:45:02.729 [INF] Frames grabados: 540
+2025-04-03 10:45:04.769 [INF] Frames grabados: 570
+2025-04-03 10:45:06.517 [INF] Frames grabados: 600
+2025-04-03 10:45:07.434 [INF] Frames grabados: 630
+2025-04-03 10:45:08.524 [INF] Frames grabados: 660
+2025-04-03 10:45:09.737 [INF] Frames grabados: 690
+2025-04-03 10:45:10.803 [INF] Frames grabados: 720
+2025-04-03 10:45:12.948 [INF] Frames grabados: 750
+2025-04-03 10:45:14.892 [INF] Frames grabados: 780
+2025-04-03 10:45:17.019 [INF] Frames grabados: 810
+2025-04-03 10:45:18.995 [INF] Frames grabados: 840
+2025-04-03 10:45:21.011 [INF] Frames grabados: 870
+2025-04-03 10:45:23.023 [INF] Frames grabados: 900
+2025-04-03 10:45:25.006 [INF] Frames grabados: 930
+2025-04-03 10:45:38.396 [INF] Iniciando aplicación Video Recolector
+2025-04-03 10:45:38.592 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-03 10:45:38.633 [INF] Now listening on: http://localhost:5000
+2025-04-03 10:45:38.757 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 10:45:38.759 [INF] Hosting environment: Development
+2025-04-03 10:45:38.760 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-03 10:45:39.046 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-04-03 10:45:39.263 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 222.0491ms
+2025-04-03 10:45:39.279 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-03 10:45:39.285 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 6.7178ms
+2025-04-03 10:45:39.293 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - null null
+2025-04-03 10:45:39.337 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.0968ms
+2025-04-03 10:45:39.414 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-04-03 10:45:39.437 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.0482ms
+2025-04-03 10:45:47.092 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Camera/start - null 0
+2025-04-03 10:45:47.105 [INF] CORS policy execution successful.
+2025-04-03 10:45:47.111 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:45:47.135 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-03 10:45:47.414 [INF] Cámara encontrada en puerto 0. Resolución: 640x480, FPS: 30
+2025-04-03 10:45:50.433 [INF] Frames grabados: 30
+2025-04-03 10:45:52.418 [INF] Frames grabados: 60
+2025-04-03 10:45:54.304 [INF] Frames grabados: 90
+2025-04-03 10:45:55.230 [INF] Frames grabados: 120
+2025-04-03 10:45:56.221 [INF] Frames grabados: 150
+2025-04-03 10:45:57.245 [INF] Frames grabados: 180
+2025-04-03 10:45:58.238 [INF] Frames grabados: 210
+2025-04-03 10:45:59.260 [INF] Frames grabados: 240
+2025-04-03 10:46:00.228 [INF] Frames grabados: 270
+2025-04-03 10:46:01.213 [INF] Frames grabados: 300
+2025-04-03 10:46:02.284 [INF] Frames grabados: 330
+2025-04-03 10:46:03.323 [INF] Frames grabados: 360
+2025-04-03 10:46:04.291 [INF] Frames grabados: 390
+2025-04-03 10:46:05.256 [INF] Frames grabados: 420
+2025-04-03 10:46:06.313 [INF] Frames grabados: 450
+2025-04-03 10:46:07.327 [INF] Frames grabados: 480
+2025-04-03 10:46:08.290 [INF] Frames grabados: 510
+2025-04-03 10:46:09.249 [INF] Frames grabados: 540
+2025-04-03 10:46:09.288 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Camera/stop - null 0
+2025-04-03 10:46:09.294 [INF] CORS policy execution successful.
+2025-04-03 10:46:09.295 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:46:09.300 [INF] Route matched with {action = "StopCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StopCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-03 10:46:09.352 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-03 10:46:09.369 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 22169.9175ms
+2025-04-03 10:46:09.373 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:46:09.378 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Camera/start - 200 null application/json; charset=utf-8 22285.9942ms
+2025-04-03 10:46:09.480 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-03 10:46:09.485 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR) in 181.5036ms
+2025-04-03 10:46:09.488 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:46:09.490 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Camera/stop - 200 null application/json; charset=utf-8 202.0705ms
+2025-04-03 10:47:33.508 [INF] Iniciando aplicación Video Recolector
+2025-04-03 10:47:33.705 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-03 10:47:33.748 [INF] Now listening on: http://localhost:5000
+2025-04-03 10:47:33.819 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-03 10:47:33.820 [INF] Hosting environment: Development
+2025-04-03 10:47:33.821 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-03 10:47:35.548 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-03 10:47:35.548 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-04-03 10:47:35.574 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 40.7784ms
+2025-04-03 10:47:35.771 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 239.1292ms
+2025-04-03 10:47:35.796 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-03 10:47:35.796 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - null null
+2025-04-03 10:47:35.800 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 4.3825ms
+2025-04-03 10:47:35.838 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.9161ms
+2025-04-03 10:47:35.924 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-04-03 10:47:35.940 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.3326ms
+2025-04-03 10:47:41.754 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Camera/start - null 0
+2025-04-03 10:47:41.767 [INF] CORS policy execution successful.
+2025-04-03 10:47:41.773 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-03 10:47:41.807 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-03 10:47:42.105 [INF] Cámara encontrada en puerto 0. Resolución: 640x480, FPS: 30
+2025-04-03 10:47:43.777 [INF] Frames grabados: 30
+2025-04-03 10:47:44.766 [INF] Frames grabados: 60
+2025-04-03 10:47:45.799 [INF] Frames grabados: 90
+2025-04-03 10:47:46.787 [INF] Frames grabados: 120
+2025-04-03 10:47:47.809 [INF] Frames grabados: 150
+2025-04-03 10:47:48.773 [INF] Frames grabados: 180
+2025-04-03 10:47:49.823 [INF] Frames grabados: 210
+2025-04-03 10:47:50.816 [INF] Frames grabados: 240
+2025-04-03 10:47:51.775 [INF] Frames grabados: 270
+2025-04-03 10:47:52.766 [INF] Frames grabados: 300
+2025-04-03 10:47:53.797 [INF] Frames grabados: 330
+2025-04-03 10:47:54.785 [INF] Frames grabados: 360
+2025-04-03 10:47:55.809 [INF] Frames grabados: 390
+2025-04-03 10:47:56.774 [INF] Frames grabados: 420
+2025-04-03 10:47:57.792 [INF] Frames grabados: 450
+2025-04-03 10:47:58.817 [INF] Frames grabados: 480
+2025-04-03 10:47:59.777 [INF] Frames grabados: 510
+2025-04-03 10:48:00.769 [INF] Frames grabados: 540
+2025-04-03 10:48:01.799 [INF] Frames grabados: 570
+2025-04-03 10:48:02.787 [INF] Frames grabados: 600
+2025-04-03 10:48:03.814 [INF] Frames grabados: 630
+2025-04-03 10:48:04.773 [INF] Frames grabados: 660
+2025-04-03 10:48:05.796 [INF] Frames grabados: 690
+2025-04-03 10:48:06.821 [INF] Frames grabados: 720

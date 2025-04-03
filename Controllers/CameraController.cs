@@ -31,7 +31,7 @@ namespace VIDEO_RECOLECTOR.Controllers
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error al iniciar la cámara");
-                return StatusCode(500, new { error = "Error al iniciar la cámara: " + ex.Message });
+                return StatusCode(500, new { error = ex.Message });
             }
         }
 
@@ -46,7 +46,7 @@ namespace VIDEO_RECOLECTOR.Controllers
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error al detener la cámara");
-                return StatusCode(500, new { error = "Error al detener la cámara: " + ex.Message });
+                return StatusCode(500, new { error = ex.Message });
             }
         }
 
@@ -56,66 +56,41 @@ namespace VIDEO_RECOLECTOR.Controllers
             return Ok(new { isRecording = _cameraService.IsRecording });
         }
 
-        private List<object> GetVideosFromDirectory(string directory, string relativePath = "")
-        {
-            var result = new List<object>();
-
-            if (!Directory.Exists(directory))
-                return result;
-
-            // Obtener subdirectorios
-            foreach (var dir in Directory.GetDirectories(directory))
-            {
-                var dirName = Path.GetFileName(dir);
-                var dirRelativePath = Path.Combine(relativePath, dirName);
-                
-                var videos = GetVideosFromDirectory(dir, dirRelativePath);
-                if (videos.Any())
-                {
-                    result.Add(new
-                    {
-                        name = dirName,
-                        type = "directory",
-                        path = dirRelativePath.Replace("\\", "/"),
-                        items = videos
-                    });
-                }
-            }
-
-            // Obtener videos
-            var videoFiles = Directory.GetFiles(directory, "*.mp4")
-                .Select(file =>
-                {
-                    var fileName = Path.GetFileName(file);
-                    return new
-                    {
-                        name = fileName,
-                        type = "file",
-                        url = $"/videos/{Path.Combine(relativePath, fileName).Replace("\\", "/")}",
-                        createdAt = System.IO.File.GetCreationTime(file),
-                        size = new FileInfo(file).Length
-                    };
-                })
-                .OrderByDescending(v => v.createdAt)
-                .ToList<object>();
-
-            result.AddRange(videoFiles);
-            return result;
-        }
-
         [HttpGet("videos")]
         public IActionResult GetVideos()
         {
             try
             {
-                var videosDirectory = Path.Combine(_env.WebRootPath, "videos");
-                var videos = GetVideosFromDirectory(videosDirectory);
+                var videosPath = Path.Combine(_env.WebRootPath, "videos");
+                if (!Directory.Exists(videosPath))
+                {
+                    return Ok(new { videos = new List<VideoInfo>() });
+                }
+
+                var videos = Directory.GetFiles(videosPath, "*.*", SearchOption.AllDirectories)
+                    .Where(file => file.EndsWith(".avi", StringComparison.OrdinalIgnoreCase))
+                    .Select(file =>
+                    {
+                        var fileInfo = new FileInfo(file);
+                        var relativePath = Path.GetRelativePath(videosPath, file).Replace('\\', '/');
+                        return new VideoInfo
+                        {
+                            FileName = fileInfo.Name,
+                            FilePath = $"/videos/{relativePath}",
+                            FileSize = fileInfo.Length,
+                            CreatedAt = fileInfo.CreationTime,
+                            DownloadUrl = $"/api/Camera/videos/{relativePath}"
+                        };
+                    })
+                    .OrderByDescending(v => v.CreatedAt)
+                    .ToList();
+
                 return Ok(new { videos });
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error al obtener la lista de videos");
-                return StatusCode(500, new { error = "Error al obtener la lista de videos: " + ex.Message });
+                return StatusCode(500, new { error = ex.Message });
             }
         }
 
@@ -130,14 +105,31 @@ namespace VIDEO_RECOLECTOR.Controllers
                     return NotFound(new { error = "Video no encontrado" });
                 }
 
-                var fileStream = new FileStream(videoPath, FileMode.Open, FileAccess.Read);
-                return File(fileStream, "video/mp4", Path.GetFileName(filePath));
+                // Verificar que el archivo esté dentro del directorio de videos
+                var videosDirectory = Path.Combine(_env.WebRootPath, "videos");
+                var fullPath = Path.GetFullPath(videoPath);
+                if (!fullPath.StartsWith(Path.GetFullPath(videosDirectory)))
+                {
+                    return BadRequest(new { error = "Ruta de archivo no válida" });
+                }
+
+                // Devolver el archivo con el tipo MIME correcto para AVI
+                return PhysicalFile(videoPath, "video/x-msvideo", enableRangeProcessing: true);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error al obtener el video");
-                return StatusCode(500, new { error = "Error al obtener el video: " + ex.Message });
+                return StatusCode(500, new { error = ex.Message });
             }
         }
+    }
+
+    public class VideoInfo
+    {
+        public string FileName { get; set; } = "";
+        public string FilePath { get; set; } = "";
+        public string DownloadUrl { get; set; } = "";
+        public long FileSize { get; set; }
+        public DateTime CreatedAt { get; set; }
     }
 }
