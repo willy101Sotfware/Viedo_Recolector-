@@ -1,0 +1,6 @@
+@VIDEO_RECOLECTOR_HostAddress = http://localhost:5238
+
+GET {{VIDEO_RECOLECTOR_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

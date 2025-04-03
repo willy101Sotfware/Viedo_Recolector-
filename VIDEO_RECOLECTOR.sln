@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIDEO_RECOLECTOR", "VIDEO_RECOLECTOR.csproj", "{39969B7C-A78F-458E-81E3-6C957E520154}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39969B7C-A78F-458E-81E3-6C957E520154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39969B7C-A78F-458E-81E3-6C957E520154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39969B7C-A78F-458E-81E3-6C957E520154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39969B7C-A78F-458E-81E3-6C957E520154}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C7510C4-A2A6-4BA9-A419-F1226ADF3446}
+	EndGlobalSection
+EndGlobal
