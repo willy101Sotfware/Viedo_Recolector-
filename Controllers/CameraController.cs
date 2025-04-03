@@ -76,7 +76,7 @@ namespace VIDEO_RECOLECTOR.Controllers
                         return new VideoInfo
                         {
                             FileName = fileInfo.Name,
-                            FilePath = $"/videos/{relativePath}",
+                            FilePath = relativePath,
                             FileSize = fileInfo.Length,
                             CreatedAt = fileInfo.CreationTime,
                             DownloadUrl = $"/api/Camera/videos/{relativePath}"
@@ -99,22 +99,37 @@ namespace VIDEO_RECOLECTOR.Controllers
         {
             try
             {
+                // Decodificar la URL y normalizar separadores
+                filePath = Uri.UnescapeDataString(filePath).Replace('\\', '/');
+                
+                // Construir la ruta usando el path relativo
                 var videoPath = Path.Combine(_env.WebRootPath, "videos", filePath);
+                
+                // Normalizar la ruta
+                videoPath = Path.GetFullPath(videoPath);
+
                 if (!System.IO.File.Exists(videoPath))
                 {
-                    return NotFound(new { error = "Video no encontrado" });
+                    return NotFound(new { 
+                        error = "Video no encontrado", 
+                        path = videoPath
+                    });
                 }
 
-                // Verificar que el archivo esté dentro del directorio de videos
-                var videosDirectory = Path.Combine(_env.WebRootPath, "videos");
-                var fullPath = Path.GetFullPath(videoPath);
-                if (!fullPath.StartsWith(Path.GetFullPath(videosDirectory)))
+                // Verificar que el archivo está dentro del directorio permitido
+                var videosDirectory = Path.GetFullPath(Path.Combine(_env.WebRootPath, "videos"));
+                if (!videoPath.StartsWith(videosDirectory))
                 {
                     return BadRequest(new { error = "Ruta de archivo no válida" });
                 }
 
-                // Devolver el archivo con el tipo MIME correcto para AVI
-                return PhysicalFile(videoPath, "video/x-msvideo", enableRangeProcessing: true);
+                // Abrir el archivo como stream
+                var stream = new FileStream(videoPath, FileMode.Open, FileAccess.Read);
+                var fileName = Path.GetFileName(videoPath);
+
+                // Devolver el stream directamente
+                Response.Headers.Add("Content-Disposition", $"attachment; filename=\"{fileName}\"");
+                return File(stream, "video/x-msvideo", fileName);
             }
             catch (Exception ex)
             {

@@ -34,10 +34,7 @@ try
     builder.Services.AddSingleton<ICameraService, CameraService>();
 
     builder.Services.AddControllers();
-    // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
     builder.Services.AddEndpointsApiExplorer();
-
-    // Configurar Swagger
     builder.Services.AddSwaggerGen(c =>
     {
         c.SwaggerDoc("v1", new OpenApiInfo { 
@@ -53,9 +50,10 @@ try
         options.AddPolicy("AllowAll",
             builder =>
             {
-                builder.AllowAnyOrigin()
-                       .AllowAnyMethod()
-                       .AllowAnyHeader();
+                builder
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
             });
     });
 
@@ -67,17 +65,20 @@ try
     var app = builder.Build();
 
     // Swagger siempre disponible, incluso en producción
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
+    if (app.Environment.IsDevelopment())
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Video Recolector API v1");
-        c.RoutePrefix = "swagger"; // Esto hace que Swagger UI sea la página principal
-    });
+        app.UseSwagger();
+        app.UseSwaggerUI(c =>
+        {
+            c.SwaggerEndpoint("/swagger/v1/swagger.json", "Video Recolector API v1");
+            c.RoutePrefix = "swagger"; // Esto hace que Swagger UI sea la página principal
+        });
+    }
 
-    app.UseCors("AllowAll");
-    // Deshabilitamos HTTPS redirection temporalmente para desarrollo
-    // app.UseHttpsRedirection();
+    app.UseHttpsRedirection();
     app.UseStaticFiles(); 
+    app.UseRouting();
+    app.UseCors("AllowAll");
     app.UseAuthorization();
 
     app.MapControllers();
