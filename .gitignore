@@ -385,3 +385,11 @@ FodyWeavers.xsd
 
 # Videos folder
 wwwroot/videos/
+# Carpetas y archivos de logs
+**/logs/
+*.log
+VIDEO_RECOLECTOR/logs/
+VIDEO_RECOLECTOR/**/*.log
+AppLogs/
+**/AppLogs/
+VIDEO_RECOLECTOR/AppLogs/

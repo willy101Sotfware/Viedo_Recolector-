@@ -1410,3 +1410,31 @@ System.Exception: No se pudo abrir la cámara
 2025-04-30 13:09:55.220 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR) in 700.2383ms
 2025-04-30 13:09:55.223 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
 2025-04-30 13:09:55.225 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/stop - 200 null application/json; charset=utf-8 720.8826ms
+2025-04-30 14:36:14.832 [INF] Iniciando aplicación Video Recolector
+2025-04-30 14:36:15.532 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 14:36:15.624 [INF] Now listening on: http://localhost:5001
+2025-04-30 14:36:15.687 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 14:36:15.688 [INF] Hosting environment: Development
+2025-04-30 14:36:15.690 [INF] Content root path: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR
+2025-04-30 14:36:16.388 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 14:36:18.819 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 2437.5477ms
+2025-04-30 14:36:18.848 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 14:36:18.852 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 14:36:18.854 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 6.1995ms
+2025-04-30 14:36:18.913 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 61.2407ms
+2025-04-30 14:36:19.150 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 14:36:19.170 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.905ms
+2025-04-30 14:38:18.315 [INF] Iniciando aplicación Video Recolector
+2025-04-30 14:38:18.553 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 14:38:18.610 [INF] Now listening on: http://localhost:5001
+2025-04-30 14:38:18.696 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 14:38:18.697 [INF] Hosting environment: Development
+2025-04-30 14:38:18.699 [INF] Content root path: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR
+2025-04-30 14:38:19.289 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 14:38:19.540 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 257.0961ms
+2025-04-30 14:38:19.559 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 14:38:19.566 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 7.3708ms
+2025-04-30 14:38:19.575 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 14:38:19.636 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.8169ms
+2025-04-30 14:38:19.703 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 14:38:19.711 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.6543ms
