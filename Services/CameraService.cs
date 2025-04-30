@@ -3,6 +3,8 @@ using Microsoft.Extensions.Configuration;
 using System.Globalization;
 using Microsoft.AspNetCore.Hosting;
 using VIDEO_RECOLECTOR.Models;
+using System.IO;
+using System.Diagnostics;
 
 namespace VIDEO_RECOLECTOR.Services
 {
@@ -21,12 +23,12 @@ namespace VIDEO_RECOLECTOR.Services
         private string _currentVideoPath = "";
         private readonly string _baseVideoDirectory;
         private readonly ILogger<CameraService> _logger;
-        private int _selectedCameraPort = -1;
-        private int frameCount = 0;
-        private static readonly object _cameraLock = new object();
-        private static HashSet<int> _busyCameras = new HashSet<int>();
         private readonly IConfiguration _configuration;
         private bool _disposed;
+        private static SemaphoreSlim _semaphore = new SemaphoreSlim(1, 1);
+        private Task? _recordingTask;
+        private CancellationTokenSource? _recordingCts;
+        private int _frameCount = 0;
 
         public bool IsRecording => _isRecording;
 
@@ -39,82 +41,71 @@ namespace VIDEO_RECOLECTOR.Services
             _disposed = false;
         }
 
-        private bool IsCameraBusy(int port)
-        {
-            lock (_cameraLock)
-            {
-                return _busyCameras.Contains(port);
-            }
-        }
-
-        private void MarkCameraAsBusy(int port)
-        {
-            lock (_cameraLock)
-            {
-                _busyCameras.Add(port);
-            }
-        }
-
-        private void MarkCameraAsAvailable(int port)
-        {
-            lock (_cameraLock)
-            {
-                _busyCameras.Remove(port);
-            }
-        }
-
-        private (int width, int height, double fps) GetCameraCapabilities(VideoCapture capture)
-        {
-            int width = (int)capture.Get(VideoCaptureProperties.FrameWidth);
-            int height = (int)capture.Get(VideoCaptureProperties.FrameHeight);
-            double fps = capture.Get(VideoCaptureProperties.Fps);
-            return (width, height, fps);
-        }
-
-        private void DetectCamera()
-        {
-            // Si no, buscar una cámara disponible
-            for (int port = 0; port < 10; port++)
-            {
-                if (IsCameraBusy(port))
-                {
-                    _logger.LogInformation($"Cámara {port} está ocupada, continuando búsqueda...");
-                    continue;
-                }
-
-                try
-                {
-                    using var testCapture = new VideoCapture(port, VideoCaptureAPIs.ANY);
-                    if (testCapture.IsOpened())
-                    {
-                        var capabilities = GetCameraCapabilities(testCapture);
-                        _logger.LogInformation($"Cámara encontrada en puerto {port}. Resolución: {capabilities.width}x{capabilities.height}, FPS: {capabilities.fps}");
-                        _selectedCameraPort = port;
-                        break;
-                    }
-                }
-                catch (Exception ex)
-                {
-                    _logger.LogWarning($"Error al probar cámara en puerto {port}: {ex.Message}");
-                }
-            }
-
-            if (_selectedCameraPort == -1)
-            {
-                throw new Exception("No se encontró ninguna cámara disponible");
-            }
-        }
-
         private string CreateVideoDirectory()
         {
-            var now = DateTime.Now;
-            var yearDir = Path.Combine(_baseVideoDirectory, now.Year.ToString());
-            var monthDir = Path.Combine(yearDir, now.ToString("MMMM", CultureInfo.InvariantCulture));
-            var weekDir = Path.Combine(monthDir, $"Semana{now.Day / 7 + 1}");
-            var dayDir = Path.Combine(weekDir, now.ToString("dddd", CultureInfo.InvariantCulture));
-
-            Directory.CreateDirectory(dayDir);
-            return dayDir;
+            try
+            {
+                // Obtener la fecha actual
+                var now = DateTime.Now;
+                
+                // Crear la estructura de directorios año/mes/día
+                string yearStr = now.Year.ToString();
+                string monthStr = now.Month.ToString("00");
+                string dayStr = now.Day.ToString("00");
+                
+                // Construir las rutas
+                string yearPath = Path.Combine(_baseVideoDirectory, yearStr);
+                string monthPath = Path.Combine(yearPath, monthStr);
+                string dayPath = Path.Combine(monthPath, dayStr);
+                
+                // Crear los directorios solo si no existen
+                if (!Directory.Exists(_baseVideoDirectory))
+                {
+                    Directory.CreateDirectory(_baseVideoDirectory);
+                    _logger.LogInformation($"Creado directorio base: {_baseVideoDirectory}");
+                }
+                
+                if (!Directory.Exists(yearPath))
+                {
+                    Directory.CreateDirectory(yearPath);
+                    _logger.LogInformation($"Creado directorio de año: {yearPath}");
+                }
+                
+                if (!Directory.Exists(monthPath))
+                {
+                    Directory.CreateDirectory(monthPath);
+                    _logger.LogInformation($"Creado directorio de mes: {monthPath}");
+                }
+                
+                if (!Directory.Exists(dayPath))
+                {
+                    Directory.CreateDirectory(dayPath);
+                    _logger.LogInformation($"Creado directorio de día: {dayPath}");
+                }
+                
+                _logger.LogInformation($"Ruta para guardar videos: {dayPath}");
+                return dayPath;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error al crear directorios: {ex.Message}");
+                
+                // En caso de error, intentar usar el directorio base
+                if (!Directory.Exists(_baseVideoDirectory))
+                {
+                    try
+                    {
+                        Directory.CreateDirectory(_baseVideoDirectory);
+                    }
+                    catch
+                    {
+                        // Si no se puede crear ni el directorio base, usar el directorio actual
+                        return Directory.GetCurrentDirectory();
+                    }
+                }
+                
+                return _baseVideoDirectory;
+            }
         }
 
         public async Task StartCamera()
@@ -124,63 +115,207 @@ namespace VIDEO_RECOLECTOR.Services
                 throw new ObjectDisposedException(nameof(CameraService));
             }
 
-            if (_isRecording)
-            {
-                _logger.LogWarning("La cámara ya está grabando");
-                return;
-            }
+            // Usar semáforo para evitar llamadas concurrentes
+            await _semaphore.WaitAsync();
 
             try
             {
-                DetectCamera();
-                MarkCameraAsBusy(_selectedCameraPort);
-                _capture = new VideoCapture(_selectedCameraPort, VideoCaptureAPIs.ANY);
-                if (!_capture.IsOpened())
+                if (_isRecording)
                 {
-                    throw new Exception($"No se pudo abrir la cámara en puerto {_selectedCameraPort}");
+                    _logger.LogWarning("La cámara ya está grabando");
+                    return;
                 }
 
-                var capabilities = GetCameraCapabilities(_capture);
-                var videoDir = CreateVideoDirectory();
-                var timestamp = DateTime.Now.ToString("HH_mm_ss");
-                _currentVideoPath = Path.Combine(videoDir, $"video_{timestamp}.avi");
+                // Detener cualquier grabación existente primero
+                await StopCameraInternal();
 
-                _writer = new VideoWriter(_currentVideoPath, FourCC.XVID, capabilities.fps, new Size(capabilities.width, capabilities.height));
-                _isRecording = true;
+                _logger.LogInformation("Iniciando grabación...");
 
-                await Task.Run(() =>
+                try
                 {
+                    // Crear la captura de video con manejo de errores
+                    _capture = null;
+                    
                     try
                     {
-                        using var frame = new Mat();
-                        while (_isRecording && !_disposed)
-                        {
-                            if (_capture.Read(frame))
-                            {
-                                if (!frame.Empty())
-                                {
-                                    _writer.Write(frame);
-                                    frameCount++;
-                                    if (frameCount % 30 == 0)
-                                    {
-                                        _logger.LogInformation($"Frames grabados: {frameCount}");
-                                    }
-                                }
-                            }
-                        }
+                        _capture = new VideoCapture(0);
                     }
                     catch (Exception ex)
                     {
-                        _logger.LogError($"Error durante la grabación: {ex.Message}");
-                        _isRecording = false;
+                        _logger.LogError($"Error al crear VideoCapture: {ex.Message}");
+                        throw new Exception("No se pudo abrir la cámara");
                     }
-                });
+
+                    if (_capture == null || !_capture.IsOpened())
+                    {
+                        throw new Exception("No se pudo abrir la cámara");
+                    }
+
+                    // Configurar la resolución y el framerate
+                    int width = 640;
+                    int height = 480;
+                    double fps = 30;
+
+                    try
+                    {
+                        width = (int)_capture.Get(VideoCaptureProperties.FrameWidth);
+                        height = (int)_capture.Get(VideoCaptureProperties.FrameHeight);
+                        fps = _capture.Get(VideoCaptureProperties.Fps);
+                        
+                        // Asegurarse de que los valores sean razonables
+                        if (width <= 0) width = 640;
+                        if (height <= 0) height = 480;
+                        if (fps <= 0) fps = 30;
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogWarning($"Error al obtener propiedades de la cámara: {ex.Message}. Usando valores predeterminados.");
+                    }
+
+                    var videoDir = CreateVideoDirectory();
+                    var timestamp = DateTime.Now.ToString("HH_mm_ss");
+                    _currentVideoPath = Path.Combine(videoDir, $"video_{timestamp}.avi");
+
+                    // Crear el VideoWriter con manejo de errores
+                    _writer = null;
+                    
+                    try
+                    {
+                        _writer = new VideoWriter(_currentVideoPath, FourCC.XVID, fps, new Size(width, height));
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError($"Error al crear VideoWriter con XVID: {ex.Message}. Intentando con MJPG.");
+                        
+                        try
+                        {
+                            _writer = new VideoWriter(_currentVideoPath, FourCC.MJPG, fps, new Size(width, height));
+                        }
+                        catch (Exception ex2)
+                        {
+                            _logger.LogError($"Error al crear VideoWriter con MJPG: {ex2.Message}");
+                            throw new Exception("No se pudo crear el archivo de video");
+                        }
+                    }
+
+                    if (_writer == null || !_writer.IsOpened())
+                    {
+                        throw new Exception("No se pudo crear el archivo de video");
+                    }
+
+                    _isRecording = true;
+                    _frameCount = 0;
+
+                    // Iniciar la grabación en segundo plano
+                    _recordingCts = new CancellationTokenSource();
+                    var token = _recordingCts.Token;
+
+                    _recordingTask = Task.Run(() =>
+                    {
+                        try
+                        {
+                            using var frame = new Mat();
+                            int errorCount = 0;
+                            
+                            while (!token.IsCancellationRequested && _isRecording && !_disposed && errorCount < 10)
+                            {
+                                try
+                                {
+                                    if (_capture != null && _writer != null)
+                                    {
+                                        bool readSuccess = false;
+                                        
+                                        try
+                                        {
+                                            readSuccess = _capture.Read(frame);
+                                        }
+                                        catch (Exception ex)
+                                        {
+                                            _logger.LogError($"Error al leer frame: {ex.Message}");
+                                            errorCount++;
+                                            Thread.Sleep(100);
+                                            continue;
+                                        }
+                                        
+                                        if (readSuccess && !frame.Empty())
+                                        {
+                                            try
+                                            {
+                                                _writer.Write(frame);
+                                                _frameCount++;
+                                                if (_frameCount % 30 == 0)
+                                                {
+                                                    _logger.LogInformation($"Frames grabados: {_frameCount}");
+                                                }
+                                                errorCount = 0; // Resetear contador de errores
+                                            }
+                                            catch (Exception ex)
+                                            {
+                                                _logger.LogError($"Error al escribir frame: {ex.Message}");
+                                                errorCount++;
+                                            }
+                                        }
+                                    }
+                                    
+                                    // Pequeña pausa para evitar uso excesivo de CPU
+                                    Thread.Sleep(10);
+                                }
+                                catch (Exception ex)
+                                {
+                                    _logger.LogError($"Error en el bucle de grabación: {ex.Message}");
+                                    errorCount++;
+                                    Thread.Sleep(100); // Pausa más larga después de un error
+                                }
+                            }
+                            
+                            if (errorCount >= 10)
+                            {
+                                _logger.LogError("Demasiados errores consecutivos. Deteniendo grabación.");
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            _logger.LogError($"Error durante la grabación: {ex.Message}");
+                        }
+                    }, token);
+
+                    _logger.LogInformation($"Grabación iniciada. Archivo: {_currentVideoPath}");
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError($"Error al iniciar la grabación: {ex.Message}");
+                    CleanupResources();
+                    throw;
+                }
+            }
+            finally
+            {
+                _semaphore.Release();
+            }
+        }
+
+        private async Task StopCameraInternal()
+        {
+            try
+            {
+                if (_recordingCts != null)
+                {
+                    _recordingCts.Cancel();
+                }
+                
+                if (_recordingTask != null)
+                {
+                    // Esperar a que termine la tarea de grabación (máximo 2 segundos)
+                    await Task.WhenAny(_recordingTask, Task.Delay(2000));
+                }
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error al iniciar la grabación: {ex.Message}");
+                _logger.LogError($"Error al detener la grabación: {ex.Message}");
+            }
+            finally
+            {
                 CleanupResources();
-                throw;
             }
         }
 
@@ -191,32 +326,62 @@ namespace VIDEO_RECOLECTOR.Services
                 throw new ObjectDisposedException(nameof(CameraService));
             }
 
-            _isRecording = false;
-            await Task.Delay(100); // Dar tiempo para que el bucle de grabación termine
-            CleanupResources();
+            // Usar semáforo para evitar llamadas concurrentes
+            await _semaphore.WaitAsync();
+
+            try
+            {
+                if (!_isRecording)
+                {
+                    _logger.LogWarning("La cámara no está grabando");
+                    return;
+                }
+
+                _isRecording = false;
+                _logger.LogInformation($"Deteniendo grabación. Total frames: {_frameCount}");
+                
+                await StopCameraInternal();
+            }
+            finally
+            {
+                _semaphore.Release();
+            }
         }
 
         private void CleanupResources()
         {
-            if (_writer != null)
+            try
             {
-                _writer.Dispose();
-                _writer = null;
+                if (_writer != null)
+                {
+                    try { _writer.Release(); } catch { }
+                    try { _writer.Dispose(); } catch { }
+                    _writer = null;
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error al liberar writer: {ex.Message}");
             }
 
-            if (_capture != null)
+            try
             {
-                _capture.Dispose();
-                _capture = null;
+                if (_capture != null)
+                {
+                    try { _capture.Release(); } catch { }
+                    try { _capture.Dispose(); } catch { }
+                    _capture = null;
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error al liberar capture: {ex.Message}");
             }
 
-            if (_selectedCameraPort != -1)
-            {
-                MarkCameraAsAvailable(_selectedCameraPort);
-                _selectedCameraPort = -1;
-            }
-
-            frameCount = 0;
+            _recordingCts = null;
+            _recordingTask = null;
+            _frameCount = 0;
+            _isRecording = false;
         }
 
         public void Dispose()
@@ -224,10 +389,19 @@ namespace VIDEO_RECOLECTOR.Services
             if (!_disposed)
             {
                 _disposed = true;
+                
                 if (_isRecording)
                 {
-                    StopCamera().Wait();
+                    try
+                    {
+                        StopCamera().Wait(3000);
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError($"Error al detener la grabación durante Dispose: {ex.Message}");
+                    }
                 }
+                
                 CleanupResources();
             }
         }

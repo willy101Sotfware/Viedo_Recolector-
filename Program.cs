@@ -83,7 +83,7 @@ try
 
     app.MapControllers();
 
-    // Asegurar que el directorio de videos existe
+    // Asegurar que el directorio base de videos existe
     var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
     var wwwrootPath = Path.Combine(baseDirectory, "wwwroot");
     var videoPath = Path.Combine(wwwrootPath, "videos");
@@ -91,10 +91,12 @@ try
     if (!Directory.Exists(wwwrootPath))
     {
         Directory.CreateDirectory(wwwrootPath);
+        Log.Information($"Creado directorio wwwroot: {wwwrootPath}");
     }
     if (!Directory.Exists(videoPath))
     {
         Directory.CreateDirectory(videoPath);
+        Log.Information($"Creado directorio base de videos: {videoPath}");
     }
 
     Log.Information("Iniciando aplicación Video Recolector");

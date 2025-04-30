@@ -1,0 +1,1412 @@
+2025-04-30 08:51:10.467 [INF] Iniciando aplicación Video Recolector
+2025-04-30 08:51:18.366 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 08:51:18.773 [INF] Now listening on: http://localhost:5001
+2025-04-30 08:51:18.862 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 08:51:18.863 [INF] Hosting environment: Development
+2025-04-30 08:51:18.864 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-30 08:51:32.903 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 08:51:35.131 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 2257.3546ms
+2025-04-30 08:51:36.118 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 08:51:36.124 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 08:51:36.131 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 7.5963ms
+2025-04-30 08:51:36.923 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 805.2619ms
+2025-04-30 08:51:37.073 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 08:51:37.083 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.6486ms
+2025-04-30 09:13:10.091 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 28
+2025-04-30 09:13:10.128 [WRN] Failed to determine the https port for redirect.
+2025-04-30 09:13:10.360 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 09:13:10.663 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 09:13:16.887 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 28
+2025-04-30 09:13:16.891 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 09:13:16.892 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 09:13:21.878 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 28
+2025-04-30 09:13:21.888 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 28
+2025-04-30 09:13:21.902 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 09:13:21.902 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 09:13:21.905 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 09:13:21.906 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 09:13:22.972 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 09:13:23.064 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 09:13:23.082 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 09:13:23.373 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.DetectCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 135
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 09:13:23.406 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 09:13:23.393 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.DetectCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 135
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 09:13:23.424 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.DetectCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 135
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 09:13:23.642 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.DetectCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 135
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 09:13:23.680 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 09:13:23.680 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 09:13:23.680 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 09:13:23.680 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 09:13:23.715 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 1791.2226ms
+2025-04-30 09:13:23.715 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 6813.3198ms
+2025-04-30 09:13:23.715 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 1795.956ms
+2025-04-30 09:13:23.715 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 13039.9166ms
+2025-04-30 09:13:23.719 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 09:13:23.724 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 09:13:23.727 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 09:13:23.730 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 09:13:23.732 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 500 null application/json; charset=utf-8 1846.747ms
+2025-04-30 09:13:23.736 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 500 null application/json; charset=utf-8 6849.593ms
+2025-04-30 09:13:23.742 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 500 null application/json; charset=utf-8 13651.1864ms
+2025-04-30 09:13:23.739 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 500 null application/json; charset=utf-8 1860.9631ms
+2025-04-30 09:18:23.127 [INF] Iniciando aplicación Video Recolector
+2025-04-30 09:18:23.546 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 09:18:23.609 [INF] Now listening on: http://localhost:5001
+2025-04-30 09:18:23.806 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 09:18:23.807 [INF] Hosting environment: Development
+2025-04-30 09:18:23.809 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-30 09:18:25.361 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 09:18:26.123 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 768.8359ms
+2025-04-30 09:18:26.292 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 09:18:26.294 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 09:18:26.303 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 10.9428ms
+2025-04-30 09:18:26.362 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.0642ms
+2025-04-30 09:18:26.585 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 09:18:26.598 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.7759ms
+2025-04-30 09:18:36.644 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 28
+2025-04-30 09:18:36.652 [WRN] Failed to determine the https port for redirect.
+2025-04-30 09:18:36.680 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 09:18:36.730 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 09:18:38.789 [INF] Cámara encontrada en puerto 0. Resolución: 640x480, FPS: 0
+2025-04-30 09:18:43.155 [INF] Frames grabados: 30
+2025-04-30 09:18:44.147 [INF] Frames grabados: 60
+2025-04-30 09:18:45.139 [INF] Frames grabados: 90
+2025-04-30 09:18:46.147 [INF] Frames grabados: 120
+2025-04-30 09:18:47.140 [INF] Frames grabados: 150
+2025-04-30 09:18:48.132 [INF] Frames grabados: 180
+2025-04-30 09:18:49.139 [INF] Frames grabados: 210
+2025-04-30 09:18:50.131 [INF] Frames grabados: 240
+2025-04-30 09:18:51.123 [INF] Frames grabados: 270
+2025-04-30 09:18:52.115 [INF] Frames grabados: 300
+2025-04-30 09:18:53.123 [INF] Frames grabados: 330
+2025-04-30 09:18:54.115 [INF] Frames grabados: 360
+2025-04-30 09:18:55.107 [INF] Frames grabados: 390
+2025-04-30 09:18:56.115 [INF] Frames grabados: 420
+2025-04-30 09:18:57.107 [INF] Frames grabados: 450
+2025-04-30 09:18:58.099 [INF] Frames grabados: 480
+2025-04-30 09:18:59.107 [INF] Frames grabados: 510
+2025-04-30 09:19:00.100 [INF] Frames grabados: 540
+2025-04-30 09:19:01.091 [INF] Frames grabados: 570
+2025-04-30 09:19:02.099 [INF] Frames grabados: 600
+2025-04-30 09:19:03.091 [INF] Frames grabados: 630
+2025-04-30 09:19:06.355 [INF] Frames grabados: 660
+2025-04-30 09:19:07.347 [INF] Frames grabados: 690
+2025-04-30 09:19:08.339 [INF] Frames grabados: 720
+2025-04-30 09:19:09.347 [INF] Frames grabados: 750
+2025-04-30 09:19:10.499 [INF] Frames grabados: 780
+2025-04-30 09:19:11.507 [INF] Frames grabados: 810
+2025-04-30 09:19:12.499 [INF] Frames grabados: 840
+2025-04-30 09:19:13.491 [INF] Frames grabados: 870
+2025-04-30 09:19:14.499 [INF] Frames grabados: 900
+2025-04-30 09:19:15.491 [INF] Frames grabados: 930
+2025-04-30 09:19:16.486 [INF] Frames grabados: 960
+2025-04-30 09:19:17.490 [INF] Frames grabados: 990
+2025-04-30 09:19:18.482 [INF] Frames grabados: 1020
+2025-04-30 09:19:19.475 [INF] Frames grabados: 1050
+2025-04-30 09:19:20.482 [INF] Frames grabados: 1080
+2025-04-30 09:19:21.474 [INF] Frames grabados: 1110
+2025-04-30 09:19:22.467 [INF] Frames grabados: 1140
+2025-04-30 09:19:23.475 [INF] Frames grabados: 1170
+2025-04-30 09:19:24.466 [INF] Frames grabados: 1200
+2025-04-30 09:19:25.458 [INF] Frames grabados: 1230
+2025-04-30 09:19:26.466 [INF] Frames grabados: 1260
+2025-04-30 09:19:27.458 [INF] Frames grabados: 1290
+2025-04-30 09:19:28.450 [INF] Frames grabados: 1320
+2025-04-30 09:19:29.459 [INF] Frames grabados: 1350
+2025-04-30 09:19:30.451 [INF] Frames grabados: 1380
+2025-04-30 09:19:31.443 [INF] Frames grabados: 1410
+2025-04-30 09:19:32.451 [INF] Frames grabados: 1440
+2025-04-30 09:19:33.443 [INF] Frames grabados: 1470
+2025-04-30 09:19:34.434 [INF] Frames grabados: 1500
+2025-04-30 09:19:35.443 [INF] Frames grabados: 1530
+2025-04-30 09:19:36.434 [INF] Frames grabados: 1560
+2025-04-30 09:19:37.490 [INF] Frames grabados: 1590
+2025-04-30 09:19:38.499 [INF] Frames grabados: 1620
+2025-04-30 09:19:39.490 [INF] Frames grabados: 1650
+2025-04-30 09:19:40.482 [INF] Frames grabados: 1680
+2025-04-30 09:19:41.490 [INF] Frames grabados: 1710
+2025-04-30 09:19:42.483 [INF] Frames grabados: 1740
+2025-04-30 09:19:43.475 [INF] Frames grabados: 1770
+2025-04-30 09:19:44.483 [INF] Frames grabados: 1800
+2025-04-30 09:19:45.475 [INF] Frames grabados: 1830
+2025-04-30 09:19:46.530 [INF] Frames grabados: 1860
+2025-04-30 09:19:47.538 [INF] Frames grabados: 1890
+2025-04-30 09:19:48.530 [INF] Frames grabados: 1920
+2025-04-30 09:19:49.524 [INF] Frames grabados: 1950
+2025-04-30 09:21:37.455 [INF] Iniciando aplicación Video Recolector
+2025-04-30 09:21:39.111 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 09:21:39.159 [INF] Now listening on: http://localhost:5001
+2025-04-30 09:21:39.224 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 09:21:39.226 [INF] Hosting environment: Development
+2025-04-30 09:21:39.227 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-30 09:21:39.854 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 09:21:43.036 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 3194.9762ms
+2025-04-30 09:21:43.064 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 09:21:43.066 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 09:21:43.070 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 6.0906ms
+2025-04-30 09:21:43.121 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.402ms
+2025-04-30 09:21:43.335 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 09:21:43.350 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.9112ms
+2025-04-30 09:22:59.287 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 28
+2025-04-30 09:22:59.297 [WRN] Failed to determine the https port for redirect.
+2025-04-30 09:22:59.347 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 09:22:59.381 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 09:23:10.093 [INF] Cámara encontrada en puerto 0. Resolución: 640x480, FPS: 0
+2025-04-30 09:23:17.168 [INF] Frames grabados: 30
+2025-04-30 09:23:18.160 [INF] Frames grabados: 60
+2025-04-30 09:23:19.264 [INF] Frames grabados: 90
+2025-04-30 09:23:20.256 [INF] Frames grabados: 120
+2025-04-30 09:23:21.248 [INF] Frames grabados: 150
+2025-04-30 09:23:22.240 [INF] Frames grabados: 180
+2025-04-30 09:23:23.248 [INF] Frames grabados: 210
+2025-04-30 09:23:24.240 [INF] Frames grabados: 240
+2025-04-30 09:23:25.232 [INF] Frames grabados: 270
+2025-04-30 09:23:26.240 [INF] Frames grabados: 300
+2025-04-30 09:23:27.232 [INF] Frames grabados: 330
+2025-04-30 09:23:28.224 [INF] Frames grabados: 360
+2025-04-30 09:23:29.232 [INF] Frames grabados: 390
+2025-04-30 09:23:30.224 [INF] Frames grabados: 420
+2025-04-30 09:23:31.217 [INF] Frames grabados: 450
+2025-04-30 09:23:32.224 [INF] Frames grabados: 480
+2025-04-30 09:23:33.216 [INF] Frames grabados: 510
+2025-04-30 09:23:34.208 [INF] Frames grabados: 540
+2025-04-30 09:23:35.218 [INF] Frames grabados: 570
+2025-04-30 09:23:36.208 [INF] Frames grabados: 600
+2025-04-30 09:23:37.199 [INF] Frames grabados: 630
+2025-04-30 09:23:38.208 [INF] Frames grabados: 660
+2025-04-30 09:23:39.199 [INF] Frames grabados: 690
+2025-04-30 09:23:40.192 [INF] Frames grabados: 720
+2025-04-30 09:23:41.201 [INF] Frames grabados: 750
+2025-04-30 09:23:42.191 [INF] Frames grabados: 780
+2025-04-30 09:23:43.183 [INF] Frames grabados: 810
+2025-04-30 09:23:44.191 [INF] Frames grabados: 840
+2025-04-30 09:23:45.183 [INF] Frames grabados: 870
+2025-04-30 09:23:46.175 [INF] Frames grabados: 900
+2025-04-30 09:23:47.184 [INF] Frames grabados: 930
+2025-04-30 09:23:48.176 [INF] Frames grabados: 960
+2025-04-30 09:23:49.169 [INF] Frames grabados: 990
+2025-04-30 09:23:50.176 [INF] Frames grabados: 1020
+2025-04-30 09:23:51.168 [INF] Frames grabados: 1050
+2025-04-30 09:23:52.160 [INF] Frames grabados: 1080
+2025-04-30 09:23:53.167 [INF] Frames grabados: 1110
+2025-04-30 09:23:54.159 [INF] Frames grabados: 1140
+2025-04-30 09:23:55.152 [INF] Frames grabados: 1170
+2025-04-30 09:23:56.159 [INF] Frames grabados: 1200
+2025-04-30 09:23:57.151 [INF] Frames grabados: 1230
+2025-04-30 09:23:58.144 [INF] Frames grabados: 1260
+2025-04-30 09:23:59.151 [INF] Frames grabados: 1290
+2025-04-30 09:24:00.145 [INF] Frames grabados: 1320
+2025-04-30 09:24:03.839 [INF] Frames grabados: 1350
+2025-04-30 09:24:04.832 [INF] Frames grabados: 1380
+2025-04-30 09:24:05.824 [INF] Frames grabados: 1410
+2025-04-30 09:24:06.832 [INF] Frames grabados: 1440
+2025-04-30 09:24:07.823 [INF] Frames grabados: 1470
+2025-04-30 09:24:08.815 [INF] Frames grabados: 1500
+2025-04-30 09:24:09.808 [INF] Frames grabados: 1530
+2025-04-30 09:24:10.815 [INF] Frames grabados: 1560
+2025-04-30 09:48:55.409 [INF] Iniciando aplicación Video Recolector
+2025-04-30 09:48:58.953 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 09:49:00.989 [INF] Now listening on: http://localhost:5001
+2025-04-30 09:49:01.272 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 09:49:01.274 [INF] Hosting environment: Development
+2025-04-30 09:49:01.275 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-30 09:49:04.699 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 09:49:08.599 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 4167.1848ms
+2025-04-30 09:49:08.684 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 09:49:08.695 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 10.8706ms
+2025-04-30 09:49:08.702 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 09:49:09.072 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 369.4363ms
+2025-04-30 09:49:09.171 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 09:49:09.179 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.077ms
+2025-04-30 09:50:57.761 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 28
+2025-04-30 09:50:57.782 [WRN] Failed to determine the https port for redirect.
+2025-04-30 09:50:57.956 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 09:50:58.151 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 09:51:03.098 [INF] Cámara encontrada en puerto 0. Resolución: 640x480, FPS: 0
+2025-04-30 09:51:05.598 [INF] Frames grabados: 30
+2025-04-30 09:51:06.606 [INF] Frames grabados: 60
+2025-04-30 09:51:07.598 [INF] Frames grabados: 90
+2025-04-30 09:51:08.589 [INF] Frames grabados: 120
+2025-04-30 09:51:09.582 [INF] Frames grabados: 150
+2025-04-30 09:51:10.590 [INF] Frames grabados: 180
+2025-04-30 09:51:11.581 [INF] Frames grabados: 210
+2025-04-30 09:51:12.574 [INF] Frames grabados: 240
+2025-04-30 09:51:13.582 [INF] Frames grabados: 270
+2025-04-30 09:51:14.574 [INF] Frames grabados: 300
+2025-04-30 09:51:15.565 [INF] Frames grabados: 330
+2025-04-30 09:51:16.573 [INF] Frames grabados: 360
+2025-04-30 09:51:17.566 [INF] Frames grabados: 390
+2025-04-30 09:51:18.558 [INF] Frames grabados: 420
+2025-04-30 09:51:19.565 [INF] Frames grabados: 450
+2025-04-30 09:51:20.558 [INF] Frames grabados: 480
+2025-04-30 09:51:21.550 [INF] Frames grabados: 510
+2025-04-30 09:51:22.557 [INF] Frames grabados: 540
+2025-04-30 09:51:23.549 [INF] Frames grabados: 570
+2025-04-30 09:51:24.541 [INF] Frames grabados: 600
+2025-04-30 09:51:25.549 [INF] Frames grabados: 630
+2025-04-30 09:51:26.541 [INF] Frames grabados: 660
+2025-04-30 09:51:27.533 [INF] Frames grabados: 690
+2025-04-30 09:51:28.541 [INF] Frames grabados: 720
+2025-04-30 09:51:29.534 [INF] Frames grabados: 750
+2025-04-30 09:51:30.525 [INF] Frames grabados: 780
+2025-04-30 09:51:33.582 [INF] Frames grabados: 810
+2025-04-30 09:51:34.589 [INF] Frames grabados: 840
+2025-04-30 09:51:35.581 [INF] Frames grabados: 870
+2025-04-30 09:51:36.574 [INF] Frames grabados: 900
+2025-04-30 09:51:37.581 [INF] Frames grabados: 930
+2025-04-30 09:51:38.573 [INF] Frames grabados: 960
+2025-04-30 09:51:39.565 [INF] Frames grabados: 990
+2025-04-30 09:51:40.573 [INF] Frames grabados: 1020
+2025-04-30 09:51:41.565 [INF] Frames grabados: 1050
+2025-04-30 09:51:42.557 [INF] Frames grabados: 1080
+2025-04-30 09:51:43.565 [INF] Frames grabados: 1110
+2025-04-30 09:51:44.558 [INF] Frames grabados: 1140
+2025-04-30 09:51:45.553 [INF] Frames grabados: 1170
+2025-04-30 09:51:46.557 [INF] Frames grabados: 1200
+2025-04-30 09:51:47.550 [INF] Frames grabados: 1230
+2025-04-30 09:51:48.541 [INF] Frames grabados: 1260
+2025-04-30 09:51:49.549 [INF] Frames grabados: 1290
+2025-04-30 09:51:50.541 [INF] Frames grabados: 1320
+2025-04-30 09:51:51.533 [INF] Frames grabados: 1350
+2025-04-30 09:51:52.542 [INF] Frames grabados: 1380
+2025-04-30 09:51:53.533 [INF] Frames grabados: 1410
+2025-04-30 09:51:54.526 [INF] Frames grabados: 1440
+2025-04-30 09:51:55.533 [INF] Frames grabados: 1470
+2025-04-30 09:54:05.964 [INF] Iniciando aplicación Video Recolector
+2025-04-30 09:54:07.336 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 09:54:07.633 [INF] Now listening on: http://localhost:5001
+2025-04-30 09:54:07.701 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 09:54:07.703 [INF] Hosting environment: Development
+2025-04-30 09:54:07.707 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-30 09:54:10.395 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 09:54:11.752 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 3410.2873ms
+2025-04-30 09:54:11.783 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 09:54:11.786 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 09:54:11.796 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 12.7705ms
+2025-04-30 09:54:12.004 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 218.3298ms
+2025-04-30 09:54:12.063 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 09:54:12.071 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.79ms
+2025-04-30 09:55:08.844 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 28
+2025-04-30 09:55:08.855 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 28
+2025-04-30 09:55:08.893 [WRN] Failed to determine the https port for redirect.
+2025-04-30 09:55:09.082 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 09:55:09.082 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 09:55:09.587 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 09:55:09.587 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 09:55:17.795 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 09:55:18.724 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.DetectCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 135
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 09:55:18.740 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 09:55:19.069 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.DetectCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 135
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 09:55:19.098 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 09:55:19.098 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 09:55:19.170 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 9568.6749ms
+2025-04-30 09:55:19.170 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 9567.2029ms
+2025-04-30 09:55:19.174 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 09:55:19.177 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 09:55:19.180 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 10336.5216ms
+2025-04-30 09:55:19.184 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 10329.7693ms
+2025-04-30 09:56:17.650 [INF] Iniciando aplicación Video Recolector
+2025-04-30 09:56:17.961 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 09:56:18.023 [INF] Now listening on: http://localhost:5001
+2025-04-30 09:56:18.116 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 09:56:18.118 [INF] Hosting environment: Development
+2025-04-30 09:56:18.120 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-30 09:56:18.333 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 09:56:18.656 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 335.3547ms
+2025-04-30 09:56:18.681 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 09:56:18.690 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 9.672ms
+2025-04-30 09:56:18.690 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 09:56:18.763 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.689ms
+2025-04-30 09:56:18.827 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 09:56:18.834 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.2318ms
+2025-04-30 09:56:54.546 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 28
+2025-04-30 09:56:54.563 [WRN] Failed to determine the https port for redirect.
+2025-04-30 09:56:54.565 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 28
+2025-04-30 09:56:54.612 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 09:56:54.613 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 09:56:54.642 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 09:56:54.642 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 09:56:54.934 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 09:56:54.999 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 09:56:55.019 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.DetectCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 135
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 09:56:55.072 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.DetectCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 135
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 09:56:55.104 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 09:56:55.104 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 09:56:55.117 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 461.5525ms
+2025-04-30 09:56:55.117 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 464.3799ms
+2025-04-30 09:56:55.120 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 09:56:55.122 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 09:56:55.125 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 500 null application/json; charset=utf-8 579.4392ms
+2025-04-30 09:56:55.132 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 500 null application/json; charset=utf-8 567.5466ms
+2025-04-30 10:01:40.396 [INF] Iniciando aplicación Video Recolector
+2025-04-30 10:01:42.745 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 10:01:43.198 [INF] Now listening on: http://localhost:5001
+2025-04-30 10:01:43.538 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 10:01:43.540 [INF] Hosting environment: Development
+2025-04-30 10:01:43.541 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-30 10:01:46.098 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 10:01:47.446 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 10:01:47.503 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 1406.8111ms
+2025-04-30 10:01:47.514 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 10:01:47.522 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 8.4164ms
+2025-04-30 10:01:47.724 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 277.6383ms
+2025-04-30 10:01:47.810 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 10:01:47.818 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.1093ms
+2025-04-30 10:02:54.808 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 10:02:54.811 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 10:02:54.831 [WRN] Failed to determine the https port for redirect.
+2025-04-30 10:02:55.060 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:02:55.060 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:02:55.844 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 10:02:55.844 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 10:16:25.345 [INF] Iniciando aplicación Video Recolector
+2025-04-30 10:16:27.035 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 10:16:27.473 [INF] Now listening on: http://localhost:5001
+2025-04-30 10:16:29.748 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 10:16:29.749 [INF] Hosting environment: Development
+2025-04-30 10:16:29.750 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-30 10:16:29.883 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 10:16:31.459 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 1712.373ms
+2025-04-30 10:16:31.485 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 10:16:31.554 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 10:16:31.559 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 4.6644ms
+2025-04-30 10:16:31.590 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 105.4477ms
+2025-04-30 10:16:31.906 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 10:16:31.952 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 46.38ms
+2025-04-30 10:17:19.612 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 10:17:19.631 [WRN] Failed to determine the https port for redirect.
+2025-04-30 10:17:19.636 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 10:17:19.802 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:17:19.802 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:17:20.265 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 10:17:20.265 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 10:17:25.180 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 10:17:25.322 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 10:17:25.337 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.DetectCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 135
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 10:17:25.397 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.DetectCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 135
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 10:17:25.574 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 10:17:25.574 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 10:17:25.600 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 5321.0177ms
+2025-04-30 10:17:25.600 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 5320.5814ms
+2025-04-30 10:17:25.603 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:17:25.605 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:17:25.607 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 500 null application/json; charset=utf-8 5994.8074ms
+2025-04-30 10:17:25.611 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 500 null application/json; charset=utf-8 5974.4ms
+2025-04-30 10:18:11.333 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 10:18:11.363 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 10:18:11.386 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:18:11.386 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:18:11.391 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 10:18:11.392 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 10:18:11.883 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 10:18:11.941 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.DetectCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 135
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 10:18:11.946 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 10:18:11.948 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 544.8415ms
+2025-04-30 10:18:11.949 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:18:11.951 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 500 null application/json; charset=utf-8 618.5896ms
+2025-04-30 10:18:12.321 [INF] Cámara encontrada en puerto 0. Resolución: 640x480, FPS: 0
+2025-04-30 10:22:56.731 [INF] Iniciando aplicación Video Recolector
+2025-04-30 10:22:57.174 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 10:22:57.274 [INF] Now listening on: http://localhost:5001
+2025-04-30 10:22:57.339 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 10:22:57.341 [INF] Hosting environment: Development
+2025-04-30 10:22:57.343 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-30 10:22:57.872 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 10:23:00.682 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 2817.3342ms
+2025-04-30 10:23:00.713 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 10:23:00.725 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 10:23:00.735 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 21.8693ms
+2025-04-30 10:23:00.821 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 95.7878ms
+2025-04-30 10:23:01.021 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 10:23:01.031 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.8706ms
+2025-04-30 10:28:36.162 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 10:28:36.180 [WRN] Failed to determine the https port for redirect.
+2025-04-30 10:28:36.404 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 10:28:36.619 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:28:36.619 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:28:37.048 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 10:28:37.048 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 10:28:44.432 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 10:28:44.557 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.DetectCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 135
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 10:28:44.566 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 10:28:45.030 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.DetectCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 135
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 10:28:45.061 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 10:28:45.061 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 10:28:45.137 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 8079.347ms
+2025-04-30 10:28:45.137 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 8074.7042ms
+2025-04-30 10:28:45.140 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:28:45.141 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:28:45.143 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 8981.0181ms
+2025-04-30 10:28:45.146 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 8749.9233ms
+2025-04-30 10:29:39.869 [INF] Iniciando aplicación Video Recolector
+2025-04-30 10:29:40.248 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 10:29:40.316 [INF] Now listening on: http://localhost:5001
+2025-04-30 10:29:40.689 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 10:29:40.690 [INF] Hosting environment: Development
+2025-04-30 10:29:40.692 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-30 10:29:41.258 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 10:29:43.620 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 2377.2431ms
+2025-04-30 10:29:43.715 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 10:29:43.724 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 8.2552ms
+2025-04-30 10:29:43.739 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 10:29:43.803 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.046ms
+2025-04-30 10:29:44.015 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 10:29:44.025 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.3799ms
+2025-04-30 10:31:26.574 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 10:31:26.590 [WRN] Failed to determine the https port for redirect.
+2025-04-30 10:31:26.624 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:31:26.635 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 10:31:26.647 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:31:26.685 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 10:31:26.795 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 10:31:27.095 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 10:31:27.157 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 10:31:27.184 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.DetectCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 135
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 10:31:27.245 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.DetectCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 135
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 10:31:27.309 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 10:31:27.309 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 10:31:27.320 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 624.8087ms
+2025-04-30 10:31:27.320 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 515.4884ms
+2025-04-30 10:31:27.323 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:31:27.324 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:31:27.326 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 500 null application/json; charset=utf-8 691.4299ms
+2025-04-30 10:31:27.328 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 500 null application/json; charset=utf-8 753.8532ms
+2025-04-30 10:33:38.465 [INF] Iniciando aplicación Video Recolector
+2025-04-30 10:33:38.732 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 10:33:38.780 [INF] Now listening on: http://localhost:5001
+2025-04-30 10:33:38.844 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 10:33:38.982 [INF] Hosting environment: Development
+2025-04-30 10:33:38.983 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-30 10:33:39.318 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 10:33:39.569 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 257.8256ms
+2025-04-30 10:33:41.983 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 10:33:41.988 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 10:33:41.991 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 7.9618ms
+2025-04-30 10:33:42.058 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.9458ms
+2025-04-30 10:33:42.359 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 10:33:42.368 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.4944ms
+2025-04-30 10:34:47.468 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 10:34:47.476 [WRN] Failed to determine the https port for redirect.
+2025-04-30 10:34:47.502 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 10:34:47.531 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:34:47.531 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:34:47.585 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 10:34:47.585 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 10:34:56.200 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 10:34:56.274 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 10:34:56.364 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.DetectCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 135
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 10:34:56.418 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.DetectCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 135
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 10:34:56.460 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 10:34:56.460 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 10:34:56.490 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 8893.3553ms
+2025-04-30 10:34:56.490 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 8896.1688ms
+2025-04-30 10:34:56.492 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:34:56.494 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:34:56.497 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 8999.0914ms
+2025-04-30 10:34:56.499 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 9030.862ms
+2025-04-30 10:37:33.964 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 10:37:34.005 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:37:34.007 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 10:37:34.050 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 10:37:34.054 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:37:34.056 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 10:37:35.086 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 10:37:35.158 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.DetectCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 135
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 10:37:35.164 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 10:37:35.167 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 1157.7378ms
+2025-04-30 10:37:35.170 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:37:35.174 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 500 null application/json; charset=utf-8 1210.4371ms
+2025-04-30 10:37:35.970 [INF] Cámara encontrada en puerto 0. Resolución: 640x480, FPS: 0
+2025-04-30 10:37:38.658 [INF] Frames grabados: 30
+2025-04-30 10:37:39.650 [INF] Frames grabados: 60
+2025-04-30 10:37:40.643 [INF] Frames grabados: 90
+2025-04-30 10:37:41.650 [INF] Frames grabados: 120
+2025-04-30 10:37:42.642 [INF] Frames grabados: 150
+2025-04-30 10:37:43.636 [INF] Frames grabados: 180
+2025-04-30 10:37:44.642 [INF] Frames grabados: 210
+2025-04-30 10:37:45.634 [INF] Frames grabados: 240
+2025-04-30 10:37:46.626 [INF] Frames grabados: 270
+2025-04-30 10:37:47.634 [INF] Frames grabados: 300
+2025-04-30 10:37:48.626 [INF] Frames grabados: 330
+2025-04-30 10:37:49.618 [INF] Frames grabados: 360
+2025-04-30 10:37:50.626 [INF] Frames grabados: 390
+2025-04-30 10:37:51.618 [INF] Frames grabados: 420
+2025-04-30 10:37:52.610 [INF] Frames grabados: 450
+2025-04-30 10:37:53.602 [INF] Frames grabados: 480
+2025-04-30 10:37:54.610 [INF] Frames grabados: 510
+2025-04-30 10:37:55.602 [INF] Frames grabados: 540
+2025-04-30 10:37:56.595 [INF] Frames grabados: 570
+2025-04-30 10:37:57.602 [INF] Frames grabados: 600
+2025-04-30 10:37:58.594 [INF] Frames grabados: 630
+2025-04-30 10:37:59.586 [INF] Frames grabados: 660
+2025-04-30 10:38:00.594 [INF] Frames grabados: 690
+2025-04-30 10:38:01.586 [INF] Frames grabados: 720
+2025-04-30 10:38:02.577 [INF] Frames grabados: 750
+2025-04-30 10:38:06.210 [INF] Frames grabados: 780
+2025-04-30 10:38:07.202 [INF] Frames grabados: 810
+2025-04-30 10:38:08.210 [INF] Frames grabados: 840
+2025-04-30 10:41:12.277 [INF] Iniciando aplicación Video Recolector
+2025-04-30 10:41:14.540 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 10:41:14.828 [INF] Now listening on: http://localhost:5001
+2025-04-30 10:41:15.023 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 10:41:15.025 [INF] Hosting environment: Development
+2025-04-30 10:41:15.026 [INF] Content root path: C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR
+2025-04-30 10:41:17.611 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 10:41:19.061 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 1748.6375ms
+2025-04-30 10:41:19.079 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 10:41:19.082 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 10:41:19.085 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 6.0772ms
+2025-04-30 10:41:19.214 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 132.5657ms
+2025-04-30 10:41:19.372 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 10:41:19.382 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.4491ms
+2025-04-30 10:41:47.628 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 10:41:47.654 [WRN] Failed to determine the https port for redirect.
+2025-04-30 10:41:47.666 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 10:41:47.841 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:41:47.841 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:41:48.140 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 10:41:48.140 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 10:41:54.825 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 10:41:55.067 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 10:41:55.085 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.DetectCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 135
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 10:41:55.146 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.DetectCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Services\CameraService.cs:line 135
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 10:41:55.753 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 10:41:55.753 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 10:41:55.852 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 7681.2212ms
+2025-04-30 10:41:55.852 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 7681.2211ms
+2025-04-30 10:41:55.854 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:41:55.856 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:41:55.859 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 8193.7208ms
+2025-04-30 10:41:55.860 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 8232.0146ms
+2025-04-30 10:42:47.179 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 10:42:47.198 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 10:42:47.210 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:42:47.210 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 10:42:47.212 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 10:42:47.215 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 10:42:48.342 [INF] Cámara encontrada en puerto 1. Resolución: 640x480, FPS: 0
+2025-04-30 10:42:48.479 [INF] Cámara encontrada en puerto 1. Resolución: 640x480, FPS: 0
+2025-04-30 11:00:45.402 [INF] Iniciando aplicación Video Recolector
+2025-04-30 11:00:53.576 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 11:00:54.466 [INF] Now listening on: http://localhost:5001
+2025-04-30 11:00:54.880 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 11:00:54.882 [INF] Hosting environment: Development
+2025-04-30 11:00:54.883 [INF] Content root path: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR
+2025-04-30 11:00:59.047 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 11:01:01.845 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 3008.8615ms
+2025-04-30 11:01:01.861 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 11:01:01.864 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 11:01:01.867 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 6.5191ms
+2025-04-30 11:01:02.224 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 359.6211ms
+2025-04-30 11:01:02.286 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 11:01:02.295 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.6523ms
+2025-04-30 11:03:59.826 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 11:03:59.845 [WRN] Failed to determine the https port for redirect.
+2025-04-30 11:03:59.900 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 11:04:00.035 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 11:04:00.035 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 11:04:00.264 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 11:04:00.264 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 11:04:07.203 [ERR] Error al detectar cámaras: No se encontró ninguna cámara disponible
+2025-04-30 11:04:07.463 [ERR] Error al detectar cámara: No se encontró ninguna cámara disponible
+2025-04-30 11:04:07.478 [ERR] Error al detectar cámaras: No se encontró ninguna cámara disponible
+2025-04-30 11:04:07.498 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 11:04:07.530 [ERR] Error al detectar cámara: No se encontró ninguna cámara disponible
+2025-04-30 11:04:07.578 [ERR] Error al iniciar la grabación: No se encontró ninguna cámara disponible
+2025-04-30 11:04:07.794 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\Services\CameraService.cs:line 150
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 11:04:07.794 [ERR] Error al iniciar la cámara
+System.Exception: No se encontró ninguna cámara disponible
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\Services\CameraService.cs:line 150
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 11:04:08.152 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 11:04:08.152 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 11:04:08.235 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 7959.1839ms
+2025-04-30 11:04:08.235 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 7962.117ms
+2025-04-30 11:04:08.238 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 11:04:08.240 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 11:04:08.242 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 8415.883ms
+2025-04-30 11:04:08.246 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 8346.1726ms
+2025-04-30 11:05:23.140 [INF] Iniciando aplicación Video Recolector
+2025-04-30 11:05:23.570 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 11:05:23.682 [INF] Now listening on: http://localhost:5001
+2025-04-30 11:05:23.742 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 11:05:23.745 [INF] Hosting environment: Development
+2025-04-30 11:05:23.746 [INF] Content root path: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR
+2025-04-30 11:05:24.625 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 11:05:27.196 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 2581.8042ms
+2025-04-30 11:05:27.223 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 11:05:27.229 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 6.3315ms
+2025-04-30 11:05:27.292 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 11:05:27.362 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.5476ms
+2025-04-30 11:05:27.550 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 11:05:27.561 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.8031ms
+2025-04-30 11:05:31.715 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 11:05:31.730 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 11:05:31.734 [WRN] Failed to determine the https port for redirect.
+2025-04-30 11:05:31.770 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 11:05:31.770 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 11:05:31.823 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 11:05:31.823 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 11:09:23.252 [INF] Iniciando aplicación Video Recolector
+2025-04-30 11:09:24.950 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 11:10:33.661 [INF] Iniciando aplicación Video Recolector
+2025-04-30 11:10:33.992 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 11:10:34.057 [INF] Now listening on: http://localhost:5001
+2025-04-30 11:10:34.487 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 11:10:34.489 [INF] Hosting environment: Development
+2025-04-30 11:10:34.490 [INF] Content root path: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR
+2025-04-30 11:10:34.758 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 11:10:36.069 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 1310.7469ms
+2025-04-30 11:10:36.082 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 11:10:36.086 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 11:10:36.090 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 7.4846ms
+2025-04-30 11:10:36.288 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 202.1403ms
+2025-04-30 11:10:36.528 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 11:10:36.535 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.4896ms
+2025-04-30 11:10:59.017 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 11:10:59.057 [WRN] Failed to determine the https port for redirect.
+2025-04-30 11:10:59.072 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 11:10:59.654 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 11:10:59.654 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 11:11:00.126 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 11:11:00.126 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 11:11:00.319 [INF] Usando cámara predeterminada en puerto 0
+2025-04-30 11:11:00.319 [INF] Usando cámara predeterminada en puerto 0
+2025-04-30 11:11:06.934 [ERR] Error al abrir la cámara: No se pudo abrir la cámara en puerto 0
+2025-04-30 11:11:06.950 [ERR] Error al iniciar la grabación: No se pudo abrir la cámara: No se pudo abrir la cámara en puerto 0
+2025-04-30 11:26:50.248 [INF] Iniciando aplicación Video Recolector
+2025-04-30 11:26:56.271 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 11:26:57.684 [INF] Now listening on: http://localhost:5001
+2025-04-30 11:26:58.536 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 11:26:58.539 [INF] Hosting environment: Development
+2025-04-30 11:26:58.546 [INF] Content root path: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR
+2025-04-30 11:26:59.163 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 11:27:03.563 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 4538.693ms
+2025-04-30 11:27:03.622 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 11:27:03.628 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 6.498ms
+2025-04-30 11:27:03.633 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 11:27:04.183 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 550.0431ms
+2025-04-30 11:27:04.393 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 11:27:04.400 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.9129ms
+2025-04-30 11:27:33.266 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 11:27:33.298 [WRN] Failed to determine the https port for redirect.
+2025-04-30 11:27:33.300 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 11:27:34.096 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 11:27:34.096 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 11:27:35.379 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 11:27:35.379 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 11:27:35.499 [INF] Iniciando grabación simulada...
+2025-04-30 11:27:35.499 [INF] Iniciando grabación simulada...
+2025-04-30 11:27:35.507 [INF] Grabación simulada iniciada. Archivo: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\wwwroot\videos\2025\04\30\video_11_27_35.txt
+2025-04-30 11:27:35.515 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 11:27:35.608 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 163.065ms
+2025-04-30 11:27:35.610 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 11:27:35.612 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 200 null application/json; charset=utf-8 2345.7529ms
+2025-04-30 11:27:36.258 [ERR] Error al iniciar la grabación simulada: The process cannot access the file 'C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\wwwroot\videos\2025\04\30\video_11_27_35.txt' because it is being used by another process.
+2025-04-30 11:27:36.527 [INF] Frames grabados: 30
+2025-04-30 11:27:36.953 [ERR] Error al iniciar la cámara
+System.IO.IOException: The process cannot access the file 'C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\wwwroot\videos\2025\04\30\video_11_27_35.txt' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.File.WriteToFile(String path, FileMode mode, String contents, Encoding encoding)
+   at System.IO.File.WriteAllText(String path, String contents)
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\Services\CameraService.cs:line 81
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 11:27:37.509 [INF] Frames grabados: 60
+2025-04-30 11:27:37.731 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 11:27:37.787 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 2349.1447ms
+2025-04-30 11:27:37.789 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 11:27:37.792 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 4492.4584ms
+2025-04-30 11:27:38.518 [INF] Frames grabados: 90
+2025-04-30 11:27:39.512 [INF] Frames grabados: 120
+2025-04-30 11:27:40.521 [INF] Frames grabados: 150
+2025-04-30 11:27:41.518 [INF] Frames grabados: 180
+2025-04-30 11:27:42.519 [INF] Frames grabados: 210
+2025-04-30 11:27:43.513 [INF] Frames grabados: 240
+2025-04-30 11:27:44.519 [INF] Frames grabados: 270
+2025-04-30 11:27:45.507 [INF] Frames grabados: 300
+2025-04-30 11:27:46.512 [INF] Frames grabados: 330
+2025-04-30 11:27:47.519 [INF] Frames grabados: 360
+2025-04-30 11:27:48.512 [INF] Frames grabados: 390
+2025-04-30 11:27:49.515 [INF] Frames grabados: 420
+2025-04-30 11:27:50.508 [INF] Frames grabados: 450
+2025-04-30 11:27:51.517 [INF] Frames grabados: 480
+2025-04-30 11:27:52.509 [INF] Frames grabados: 510
+2025-04-30 11:27:53.517 [INF] Frames grabados: 540
+2025-04-30 11:27:54.510 [INF] Frames grabados: 570
+2025-04-30 11:27:55.514 [INF] Frames grabados: 600
+2025-04-30 11:27:56.521 [INF] Frames grabados: 630
+2025-04-30 11:27:57.514 [INF] Frames grabados: 660
+2025-04-30 11:27:58.520 [INF] Frames grabados: 690
+2025-04-30 11:27:59.510 [INF] Frames grabados: 720
+2025-04-30 11:28:00.512 [INF] Frames grabados: 750
+2025-04-30 11:28:01.520 [INF] Frames grabados: 780
+2025-04-30 11:28:02.514 [INF] Frames grabados: 810
+2025-04-30 11:28:03.508 [INF] Frames grabados: 840
+2025-04-30 11:28:04.520 [INF] Frames grabados: 870
+2025-04-30 11:28:05.507 [INF] Frames grabados: 900
+2025-04-30 11:28:06.513 [INF] Frames grabados: 930
+2025-04-30 11:28:07.516 [INF] Frames grabados: 960
+2025-04-30 11:28:08.512 [INF] Frames grabados: 990
+2025-04-30 11:28:09.520 [INF] Frames grabados: 1020
+2025-04-30 11:28:10.512 [INF] Frames grabados: 1050
+2025-04-30 11:28:11.507 [INF] Frames grabados: 1080
+2025-04-30 11:28:12.507 [INF] Frames grabados: 1110
+2025-04-30 11:28:14.518 [INF] Frames grabados: 1170
+2025-04-30 11:28:15.510 [INF] Frames grabados: 1200
+2025-04-30 11:28:13.511 [INF] Frames grabados: 1140
+2025-04-30 11:28:16.517 [INF] Frames grabados: 1230
+2025-04-30 11:28:17.521 [INF] Frames grabados: 1260
+2025-04-30 11:28:18.516 [INF] Frames grabados: 1290
+2025-04-30 11:28:19.509 [INF] Frames grabados: 1320
+2025-04-30 11:28:20.520 [INF] Frames grabados: 1350
+2025-04-30 11:35:18.534 [INF] Iniciando aplicación Video Recolector
+2025-04-30 11:35:22.024 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 11:35:22.564 [INF] Now listening on: http://localhost:5001
+2025-04-30 11:35:22.870 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 11:35:22.872 [INF] Hosting environment: Development
+2025-04-30 11:35:22.873 [INF] Content root path: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR
+2025-04-30 11:35:24.200 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 11:35:33.003 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 8929.5313ms
+2025-04-30 11:35:33.009 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 11:35:33.064 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 11:35:33.070 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 5.2933ms
+2025-04-30 11:35:33.126 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 116.486ms
+2025-04-30 11:35:33.539 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 11:35:33.548 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.6079ms
+2025-04-30 11:38:07.936 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 11:38:08.192 [WRN] Failed to determine the https port for redirect.
+2025-04-30 11:38:09.250 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 11:38:10.478 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 11:38:10.930 [INF] Iniciando grabación...
+2025-04-30 11:38:14.079 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 11:38:14.084 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 11:38:14.087 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 11:38:26.684 [ERR] Error al iniciar la grabación: No se pudo abrir la cámara
+2025-04-30 11:38:26.772 [INF] Iniciando grabación...
+2025-04-30 11:38:26.909 [ERR] Error al iniciar la cámara
+System.Exception: No se pudo abrir la cámara
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 11:38:28.324 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 11:38:28.466 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 17922.7985ms
+2025-04-30 11:38:28.470 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 11:38:28.475 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 20538.8155ms
+2025-04-30 11:38:29.789 [ERR] Error al iniciar la grabación: No se pudo abrir la cámara
+2025-04-30 11:38:29.823 [ERR] Error al iniciar la cámara
+System.Exception: No se pudo abrir la cámara
+   at VIDEO_RECOLECTOR.Services.CameraService.StartCamera() in C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\Services\CameraService.cs:line 104
+   at VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera() in C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\Controllers\CameraController.cs:line 28
+2025-04-30 11:38:29.828 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 11:38:29.831 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 15741.4774ms
+2025-04-30 11:38:29.833 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 11:38:29.835 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 15756.5921ms
+2025-04-30 11:47:04.095 [INF] Iniciando aplicación Video Recolector
+2025-04-30 11:47:11.041 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 11:47:12.671 [INF] Now listening on: http://localhost:5001
+2025-04-30 11:47:15.518 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 11:47:15.520 [INF] Hosting environment: Development
+2025-04-30 11:47:15.521 [INF] Content root path: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR
+2025-04-30 11:47:16.004 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 11:47:19.826 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 4325.8989ms
+2025-04-30 11:47:19.834 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 11:47:19.842 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 7.489ms
+2025-04-30 11:47:19.852 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 11:47:20.137 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 285.0571ms
+2025-04-30 11:47:20.311 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 11:47:20.318 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.9235ms
+2025-04-30 11:47:45.394 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 11:47:45.431 [WRN] Failed to determine the https port for redirect.
+2025-04-30 11:47:46.442 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 11:47:46.867 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 11:47:48.981 [INF] Iniciando grabación...
+2025-04-30 11:47:50.414 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 11:47:50.419 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 11:47:50.420 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 11:48:12.650 [INF] Grabación iniciada. Archivo: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\wwwroot\videos\2025\04\30\video_11_47_59.avi
+2025-04-30 11:48:12.652 [WRN] La cámara ya está grabando
+2025-04-30 11:48:12.703 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 11:48:12.703 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 11:48:13.121 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 22693.4289ms
+2025-04-30 11:48:13.121 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 26241.5675ms
+2025-04-30 11:48:13.125 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 11:48:13.127 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 11:48:13.131 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 27742.4003ms
+2025-04-30 11:48:13.131 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 22717.0106ms
+2025-04-30 11:48:13.813 [INF] Frames grabados: 30
+2025-04-30 11:48:14.807 [INF] Frames grabados: 60
+2025-04-30 11:48:15.913 [INF] Frames grabados: 90
+2025-04-30 11:48:16.933 [INF] Frames grabados: 120
+2025-04-30 11:48:17.941 [INF] Frames grabados: 150
+2025-04-30 11:48:18.933 [INF] Frames grabados: 180
+2025-04-30 11:48:19.925 [INF] Frames grabados: 210
+2025-04-30 11:48:20.933 [INF] Frames grabados: 240
+2025-04-30 11:48:21.957 [INF] Frames grabados: 270
+2025-04-30 11:48:22.950 [INF] Frames grabados: 300
+2025-04-30 11:48:28.438 [INF] Frames grabados: 330
+2025-04-30 12:16:06.308 [INF] Iniciando aplicación Video Recolector
+2025-04-30 12:16:11.265 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 12:16:13.982 [INF] Now listening on: http://localhost:5001
+2025-04-30 12:16:15.248 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 12:16:15.251 [INF] Hosting environment: Development
+2025-04-30 12:16:15.254 [INF] Content root path: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR
+2025-04-30 12:17:26.307 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 12:17:32.768 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 6950.997ms
+2025-04-30 12:17:32.961 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 12:17:32.969 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 8.0779ms
+2025-04-30 12:17:32.980 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 12:17:34.438 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1458.3555ms
+2025-04-30 12:17:34.581 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 12:17:34.592 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.7773ms
+2025-04-30 12:23:54.184 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 12:23:54.243 [WRN] Failed to determine the https port for redirect.
+2025-04-30 12:23:54.567 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:23:54.869 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 12:23:55.704 [INF] Iniciando grabación...
+2025-04-30 12:23:59.589 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 12:23:59.594 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:23:59.597 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 12:24:02.985 [INF] Grabación iniciada. Archivo: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\wwwroot\videos\2025\04\30\video_12_24_01.avi
+2025-04-30 12:24:02.988 [WRN] La cámara ya está grabando
+2025-04-30 12:24:02.995 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 12:24:02.995 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 12:24:03.051 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 3442.4155ms
+2025-04-30 12:24:03.068 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:24:03.074 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 200 null application/json; charset=utf-8 3485.307ms
+2025-04-30 12:24:03.108 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 8231.7132ms
+2025-04-30 12:24:03.111 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:24:03.113 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 8928.8467ms
+2025-04-30 12:24:04.485 [INF] Frames grabados: 30
+2025-04-30 12:24:05.717 [INF] Frames grabados: 60
+2025-04-30 12:24:06.965 [INF] Frames grabados: 90
+2025-04-30 12:24:08.213 [INF] Frames grabados: 120
+2025-04-30 12:24:08.322 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/stop - application/json; charset=utf-8 12
+2025-04-30 12:24:08.389 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:24:08.395 [INF] Route matched with {action = "StopCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StopCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 12:24:08.400 [INF] Deteniendo grabación. Total frames: 124
+2025-04-30 12:24:09.373 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 12:24:09.375 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR) in 976.7998ms
+2025-04-30 12:24:09.377 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:24:09.379 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/stop - 200 null application/json; charset=utf-8 1057.0406ms
+2025-04-30 12:26:26.699 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 12:26:26.719 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:26:26.721 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 12:26:26.723 [INF] Iniciando grabación...
+2025-04-30 12:26:27.131 [INF] Grabación iniciada. Archivo: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\wwwroot\videos\2025\04\30\video_12_26_27.avi
+2025-04-30 12:26:27.135 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 12:26:27.140 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 416.8748ms
+2025-04-30 12:26:27.150 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:26:27.155 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 200 null application/json; charset=utf-8 456.3875ms
+2025-04-30 12:26:27.165 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 12:26:27.179 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:26:27.181 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 12:26:27.184 [WRN] La cámara ya está grabando
+2025-04-30 12:26:27.185 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 12:26:27.187 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 3.2584ms
+2025-04-30 12:26:27.189 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:26:27.191 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 200 null application/json; charset=utf-8 26.7847ms
+2025-04-30 12:26:28.621 [INF] Frames grabados: 30
+2025-04-30 12:26:29.869 [INF] Frames grabados: 60
+2025-04-30 12:26:31.118 [INF] Frames grabados: 90
+2025-04-30 12:26:32.366 [INF] Frames grabados: 120
+2025-04-30 12:26:33.599 [INF] Frames grabados: 150
+2025-04-30 12:26:34.846 [INF] Frames grabados: 180
+2025-04-30 12:26:36.092 [INF] Frames grabados: 210
+2025-04-30 12:26:37.344 [INF] Frames grabados: 240
+2025-04-30 12:26:38.359 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/stop - application/json; charset=utf-8 12
+2025-04-30 12:26:38.363 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:26:38.365 [INF] Route matched with {action = "StopCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StopCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 12:26:38.369 [INF] Deteniendo grabación. Total frames: 264
+2025-04-30 12:26:38.872 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 12:26:38.877 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR) in 507.9586ms
+2025-04-30 12:26:38.881 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:26:38.883 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/stop - 200 null application/json; charset=utf-8 523.9521ms
+2025-04-30 12:27:34.348 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 12:27:34.360 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:27:34.362 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 12:27:34.365 [INF] Iniciando grabación...
+2025-04-30 12:27:34.780 [INF] Grabación iniciada. Archivo: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\wwwroot\videos\2025\04\30\video_12_27_34.avi
+2025-04-30 12:27:34.789 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 12:27:34.790 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 425.6044ms
+2025-04-30 12:27:34.792 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:27:34.795 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 200 null application/json; charset=utf-8 447.109ms
+2025-04-30 12:27:34.799 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 12:27:34.813 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:27:34.815 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 12:27:34.818 [WRN] La cámara ya está grabando
+2025-04-30 12:27:34.819 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 12:27:34.822 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 4.1678ms
+2025-04-30 12:27:34.828 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:27:34.830 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 200 null application/json; charset=utf-8 30.2999ms
+2025-04-30 12:27:36.273 [INF] Frames grabados: 30
+2025-04-30 12:27:37.521 [INF] Frames grabados: 60
+2025-04-30 12:27:38.771 [INF] Frames grabados: 90
+2025-04-30 12:27:40.019 [INF] Frames grabados: 120
+2025-04-30 12:27:41.265 [INF] Frames grabados: 150
+2025-04-30 12:27:42.497 [INF] Frames grabados: 180
+2025-04-30 12:27:43.745 [INF] Frames grabados: 210
+2025-04-30 12:27:44.993 [INF] Frames grabados: 240
+2025-04-30 12:27:46.051 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/stop - application/json; charset=utf-8 12
+2025-04-30 12:27:46.056 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:27:46.058 [INF] Route matched with {action = "StopCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StopCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 12:27:46.063 [INF] Deteniendo grabación. Total frames: 265
+2025-04-30 12:27:46.568 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 12:27:46.570 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR) in 507.8561ms
+2025-04-30 12:27:46.573 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:27:46.574 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/stop - 200 null application/json; charset=utf-8 523.0418ms
+2025-04-30 12:31:36.180 [INF] Iniciando aplicación Video Recolector
+2025-04-30 12:31:36.665 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 12:31:36.681 [INF] Now listening on: http://localhost:5001
+2025-04-30 12:31:36.736 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 12:31:36.738 [INF] Hosting environment: Development
+2025-04-30 12:31:36.740 [INF] Content root path: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR
+2025-04-30 12:33:59.062 [INF] Iniciando aplicación Video Recolector
+2025-04-30 12:33:59.889 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 12:34:00.217 [INF] Now listening on: http://localhost:5001
+2025-04-30 12:34:00.300 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 12:34:00.302 [INF] Hosting environment: Development
+2025-04-30 12:34:00.304 [INF] Content root path: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR
+2025-04-30 12:34:03.974 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 12:34:05.076 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 1160.2914ms
+2025-04-30 12:34:05.149 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 12:34:05.151 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 12:34:05.161 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 12.4493ms
+2025-04-30 12:34:05.245 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 93.3487ms
+2025-04-30 12:34:05.772 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 12:34:05.781 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.4386ms
+2025-04-30 12:34:34.216 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 12:34:34.243 [WRN] Failed to determine the https port for redirect.
+2025-04-30 12:34:34.356 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:34:34.735 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 12:34:34.934 [INF] Iniciando grabación...
+2025-04-30 12:34:39.249 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 12:34:39.254 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:34:39.256 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 12:34:47.864 [INF] Grabación iniciada. Archivo: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\wwwroot\videos\2025\04\30\video_12_34_47.avi
+2025-04-30 12:34:47.866 [WRN] La cámara ya está grabando
+2025-04-30 12:34:47.876 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 12:34:47.876 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 12:34:47.972 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 8708.8614ms
+2025-04-30 12:34:47.972 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 13170.8032ms
+2025-04-30 12:34:47.975 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:34:47.976 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:34:47.980 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 13764.0564ms
+2025-04-30 12:34:47.980 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 8730.7422ms
+2025-04-30 12:34:49.239 [INF] Frames grabados: 30
+2025-04-30 12:34:50.471 [INF] Frames grabados: 60
+2025-04-30 12:34:51.719 [INF] Frames grabados: 90
+2025-04-30 12:34:52.971 [INF] Frames grabados: 120
+2025-04-30 12:34:54.216 [INF] Frames grabados: 150
+2025-04-30 12:34:55.464 [INF] Frames grabados: 180
+2025-04-30 12:34:56.716 [INF] Frames grabados: 210
+2025-04-30 12:34:57.959 [INF] Frames grabados: 240
+2025-04-30 12:34:59.208 [INF] Frames grabados: 270
+2025-04-30 12:35:00.455 [INF] Frames grabados: 300
+2025-04-30 12:35:01.703 [INF] Frames grabados: 330
+2025-04-30 12:35:02.952 [INF] Frames grabados: 360
+2025-04-30 12:35:04.199 [INF] Frames grabados: 390
+2025-04-30 12:35:05.433 [INF] Frames grabados: 420
+2025-04-30 12:35:06.679 [INF] Frames grabados: 450
+2025-04-30 12:35:07.929 [INF] Frames grabados: 480
+2025-04-30 12:35:09.174 [INF] Frames grabados: 510
+2025-04-30 12:35:10.422 [INF] Frames grabados: 540
+2025-04-30 12:35:11.674 [INF] Frames grabados: 570
+2025-04-30 12:35:12.919 [INF] Frames grabados: 600
+2025-04-30 12:35:14.167 [INF] Frames grabados: 630
+2025-04-30 12:39:23.206 [INF] Iniciando aplicación Video Recolector
+2025-04-30 12:39:24.110 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 12:39:24.320 [INF] Now listening on: http://localhost:5001
+2025-04-30 12:39:24.412 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 12:39:24.414 [INF] Hosting environment: Development
+2025-04-30 12:39:24.415 [INF] Content root path: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR
+2025-04-30 12:39:24.893 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 12:39:27.675 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 2794.0079ms
+2025-04-30 12:39:27.737 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 12:39:27.739 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 12:39:27.742 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 5.1695ms
+2025-04-30 12:39:28.046 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 306.9557ms
+2025-04-30 12:39:28.123 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 12:39:28.136 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.7548ms
+2025-04-30 12:39:58.913 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 12:39:58.934 [WRN] Failed to determine the https port for redirect.
+2025-04-30 12:39:58.981 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:39:59.047 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 12:39:59.116 [INF] Iniciando grabación...
+2025-04-30 12:40:03.945 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 12:40:03.954 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:40:03.956 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 12:40:04.332 [INF] Grabación iniciada. Archivo: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\wwwroot\videos\2025\04\30\video_12_40_03.avi
+2025-04-30 12:40:04.336 [WRN] La cámara ya está grabando
+2025-04-30 12:40:04.350 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 12:40:04.350 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 12:40:04.379 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 407.7232ms
+2025-04-30 12:40:04.382 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:40:04.386 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 200 null application/json; charset=utf-8 441.3276ms
+2025-04-30 12:40:04.402 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 5352.487ms
+2025-04-30 12:40:04.405 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:40:04.409 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 5496.7731ms
+2025-04-30 12:40:05.772 [INF] Frames grabados: 30
+2025-04-30 12:40:07.020 [INF] Frames grabados: 60
+2025-04-30 12:40:08.269 [INF] Frames grabados: 90
+2025-04-30 12:40:10.093 [INF] Frames grabados: 120
+2025-04-30 12:40:11.340 [INF] Frames grabados: 150
+2025-04-30 12:40:12.589 [INF] Frames grabados: 180
+2025-04-30 12:40:13.836 [INF] Frames grabados: 210
+2025-04-30 12:40:15.084 [INF] Frames grabados: 240
+2025-04-30 12:40:15.379 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/stop - application/json; charset=utf-8 12
+2025-04-30 12:40:15.422 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:40:15.428 [INF] Route matched with {action = "StopCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StopCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 12:40:15.434 [INF] Deteniendo grabación. Total frames: 248
+2025-04-30 12:40:15.998 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 12:40:16.001 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR) in 568.5723ms
+2025-04-30 12:40:16.003 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:40:16.005 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/stop - 200 null application/json; charset=utf-8 626.349ms
+2025-04-30 12:48:10.691 [INF] Iniciando aplicación Video Recolector
+2025-04-30 12:48:14.247 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 12:48:15.102 [INF] Now listening on: http://localhost:5001
+2025-04-30 12:48:17.562 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 12:48:17.564 [INF] Hosting environment: Development
+2025-04-30 12:48:17.565 [INF] Content root path: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR
+2025-04-30 12:48:17.955 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 12:48:20.386 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 2753.4039ms
+2025-04-30 12:48:20.404 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 12:48:20.407 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 12:48:20.413 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 9.1358ms
+2025-04-30 12:48:20.599 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 192.2977ms
+2025-04-30 12:48:20.840 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 12:48:20.850 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.4704ms
+2025-04-30 12:48:58.576 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 12:48:58.619 [WRN] Failed to determine the https port for redirect.
+2025-04-30 12:48:59.067 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:48:59.302 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 12:48:59.465 [INF] Iniciando grabación...
+2025-04-30 12:49:05.009 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 12:49:05.021 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:49:05.023 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 12:49:07.879 [INF] Ruta final para videos: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\wwwroot\videos\2025\04\30
+2025-04-30 12:49:08.891 [INF] Grabación iniciada. Archivo: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\wwwroot\videos\2025\04\30\video_12_49_07.avi
+2025-04-30 12:49:08.893 [WRN] La cámara ya está grabando
+2025-04-30 12:49:08.921 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 12:49:08.921 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 12:49:09.688 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 10347.5866ms
+2025-04-30 12:49:09.688 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 4654.3608ms
+2025-04-30 12:49:09.692 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:49:09.695 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:49:09.698 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 11121.9813ms
+2025-04-30 12:49:09.703 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 4694.1356ms
+2025-04-30 12:49:10.773 [INF] Frames grabados: 30
+2025-04-30 12:49:11.764 [INF] Frames grabados: 60
+2025-04-30 12:49:12.758 [INF] Frames grabados: 90
+2025-04-30 12:49:13.764 [INF] Frames grabados: 120
+2025-04-30 12:49:14.757 [INF] Frames grabados: 150
+2025-04-30 12:49:15.748 [INF] Frames grabados: 180
+2025-04-30 12:49:16.756 [INF] Frames grabados: 210
+2025-04-30 12:49:17.748 [INF] Frames grabados: 240
+2025-04-30 12:49:18.740 [INF] Frames grabados: 270
+2025-04-30 12:49:19.748 [INF] Frames grabados: 300
+2025-04-30 12:49:20.741 [INF] Frames grabados: 330
+2025-04-30 12:49:21.733 [INF] Frames grabados: 360
+2025-04-30 12:49:22.740 [INF] Frames grabados: 390
+2025-04-30 12:49:23.732 [INF] Frames grabados: 420
+2025-04-30 12:49:24.725 [INF] Frames grabados: 450
+2025-04-30 12:49:25.732 [INF] Frames grabados: 480
+2025-04-30 12:49:26.724 [INF] Frames grabados: 510
+2025-04-30 12:49:27.720 [INF] Frames grabados: 540
+2025-04-30 12:49:28.855 [INF] Frames grabados: 570
+2025-04-30 12:49:30.020 [INF] Frames grabados: 600
+2025-04-30 12:49:31.012 [INF] Frames grabados: 630
+2025-04-30 12:49:32.005 [INF] Frames grabados: 660
+2025-04-30 12:49:33.012 [INF] Frames grabados: 690
+2025-04-30 12:49:34.005 [INF] Frames grabados: 720
+2025-04-30 12:49:34.996 [INF] Frames grabados: 750
+2025-04-30 12:49:36.003 [INF] Frames grabados: 780
+2025-04-30 12:49:36.999 [INF] Frames grabados: 810
+2025-04-30 12:49:37.989 [INF] Frames grabados: 840
+2025-04-30 12:49:38.980 [INF] Frames grabados: 870
+2025-04-30 12:49:39.988 [INF] Frames grabados: 900
+2025-04-30 12:49:40.764 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 12:49:40.813 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:49:40.817 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 12:49:40.820 [WRN] La cámara ya está grabando
+2025-04-30 12:49:40.821 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 12:49:40.824 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 3.3017ms
+2025-04-30 12:49:40.828 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:49:40.829 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 200 null application/json; charset=utf-8 65.5608ms
+2025-04-30 12:49:40.833 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 12:49:40.837 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:49:40.838 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 12:49:40.845 [WRN] La cámara ya está grabando
+2025-04-30 12:49:40.847 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 12:49:40.850 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 4.6066ms
+2025-04-30 12:49:40.852 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:49:40.854 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 200 null application/json; charset=utf-8 20.2999ms
+2025-04-30 12:49:40.982 [INF] Frames grabados: 930
+2025-04-30 12:49:41.972 [INF] Frames grabados: 960
+2025-04-30 12:49:42.980 [INF] Frames grabados: 990
+2025-04-30 12:49:43.973 [INF] Frames grabados: 1020
+2025-04-30 12:49:44.964 [INF] Frames grabados: 1050
+2025-04-30 12:49:45.972 [INF] Frames grabados: 1080
+2025-04-30 12:49:46.964 [INF] Frames grabados: 1110
+2025-04-30 12:49:47.956 [INF] Frames grabados: 1140
+2025-04-30 12:49:48.965 [INF] Frames grabados: 1170
+2025-04-30 12:49:49.955 [INF] Frames grabados: 1200
+2025-04-30 12:49:50.948 [INF] Frames grabados: 1230
+2025-04-30 12:49:51.956 [INF] Frames grabados: 1260
+2025-04-30 12:49:52.948 [INF] Frames grabados: 1290
+2025-04-30 12:49:53.941 [INF] Frames grabados: 1320
+2025-04-30 12:49:54.948 [INF] Frames grabados: 1350
+2025-04-30 12:49:55.941 [INF] Frames grabados: 1380
+2025-04-30 12:49:56.933 [INF] Frames grabados: 1410
+2025-04-30 12:49:57.550 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/stop - application/json; charset=utf-8 12
+2025-04-30 12:49:57.556 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:49:57.561 [INF] Route matched with {action = "StopCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StopCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 12:49:57.568 [INF] Deteniendo grabación. Total frames: 1428
+2025-04-30 12:49:58.596 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 12:49:58.599 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR) in 1033.5995ms
+2025-04-30 12:49:58.605 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:49:58.609 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/stop - 200 null application/json; charset=utf-8 1058.977ms
+2025-04-30 12:59:21.314 [INF] Iniciando aplicación Video Recolector
+2025-04-30 12:59:23.375 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 12:59:23.858 [INF] Now listening on: http://localhost:5001
+2025-04-30 12:59:24.060 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 12:59:24.062 [INF] Hosting environment: Development
+2025-04-30 12:59:24.063 [INF] Content root path: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR
+2025-04-30 12:59:24.707 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 12:59:28.242 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 3687.2642ms
+2025-04-30 12:59:28.268 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 12:59:28.304 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 12:59:28.308 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 4.6126ms
+2025-04-30 12:59:28.506 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 237.9344ms
+2025-04-30 12:59:28.613 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 12:59:28.622 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.9854ms
+2025-04-30 12:59:52.726 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 12:59:52.747 [WRN] Failed to determine the https port for redirect.
+2025-04-30 12:59:53.028 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 12:59:53.336 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 12:59:54.492 [INF] Iniciando grabación...
+2025-04-30 13:00:00.399 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 13:00:00.415 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 13:00:00.416 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 13:00:03.880 [INF] Videos se guardarán en: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\wwwroot\videos\2025\04\30
+2025-04-30 13:00:05.867 [INF] Grabación iniciada. Archivo: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\wwwroot\videos\2025\04\30\video_13_00_03.avi
+2025-04-30 13:00:05.869 [WRN] La cámara ya está grabando
+2025-04-30 13:00:05.896 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 13:00:05.896 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 13:00:06.172 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 12825.8122ms
+2025-04-30 13:00:06.172 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 5748.1415ms
+2025-04-30 13:00:06.175 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 13:00:06.178 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 13:00:06.180 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 13454.2433ms
+2025-04-30 13:00:06.185 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 5786.1437ms
+2025-04-30 13:00:06.999 [INF] Frames grabados: 30
+2025-04-30 13:00:07.992 [INF] Frames grabados: 60
+2025-04-30 13:00:08.984 [INF] Frames grabados: 90
+2025-04-30 13:00:09.992 [INF] Frames grabados: 120
+2025-04-30 13:00:10.983 [INF] Frames grabados: 150
+2025-04-30 13:00:11.975 [INF] Frames grabados: 180
+2025-04-30 13:00:12.986 [INF] Frames grabados: 210
+2025-04-30 13:00:13.977 [INF] Frames grabados: 240
+2025-04-30 13:00:14.968 [INF] Frames grabados: 270
+2025-04-30 13:00:15.977 [INF] Frames grabados: 300
+2025-04-30 13:00:16.968 [INF] Frames grabados: 330
+2025-04-30 13:00:17.961 [INF] Frames grabados: 360
+2025-04-30 13:00:18.967 [INF] Frames grabados: 390
+2025-04-30 13:00:19.959 [INF] Frames grabados: 420
+2025-04-30 13:00:20.951 [INF] Frames grabados: 450
+2025-04-30 13:00:21.960 [INF] Frames grabados: 480
+2025-04-30 13:00:22.951 [INF] Frames grabados: 510
+2025-04-30 13:00:23.945 [INF] Frames grabados: 540
+2025-04-30 13:00:24.951 [INF] Frames grabados: 570
+2025-04-30 13:00:25.943 [INF] Frames grabados: 600
+2025-04-30 13:00:26.935 [INF] Frames grabados: 630
+2025-04-30 13:00:27.943 [INF] Frames grabados: 660
+2025-04-30 13:00:28.935 [INF] Frames grabados: 690
+2025-04-30 13:00:29.927 [INF] Frames grabados: 720
+2025-04-30 13:00:30.939 [INF] Frames grabados: 750
+2025-04-30 13:00:31.927 [INF] Frames grabados: 780
+2025-04-30 13:00:32.920 [INF] Frames grabados: 810
+2025-04-30 13:00:33.927 [INF] Frames grabados: 840
+2025-04-30 13:07:30.105 [INF] Iniciando aplicación Video Recolector
+2025-04-30 13:07:31.939 [WRN] Overriding address(es) 'http://localhost:5001'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-30 13:07:32.468 [INF] Now listening on: http://localhost:5001
+2025-04-30 13:07:32.676 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 13:07:32.678 [INF] Hosting environment: Development
+2025-04-30 13:07:32.680 [INF] Content root path: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR
+2025-04-30 13:07:35.429 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/index.html - null null
+2025-04-30 13:07:36.935 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/index.html - 200 null text/html;charset=utf-8 1577.8407ms
+2025-04-30 13:07:36.957 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 13:07:36.964 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 7.0751ms
+2025-04-30 13:07:36.978 [INF] Request starting HTTP/1.1 GET http://localhost:5001/_vs/browserLink - null null
+2025-04-30 13:07:37.265 [INF] Request finished HTTP/1.1 GET http://localhost:5001/_vs/browserLink - 200 null text/javascript; charset=UTF-8 287.1755ms
+2025-04-30 13:07:37.348 [INF] Request starting HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - null null
+2025-04-30 13:07:37.375 [INF] Request finished HTTP/1.1 GET http://localhost:5001/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.4298ms
+2025-04-30 13:08:59.282 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 13:08:59.323 [WRN] Failed to determine the https port for redirect.
+2025-04-30 13:08:59.458 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 13:08:59.768 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 13:08:59.938 [INF] Iniciando grabación...
+2025-04-30 13:09:06.538 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 13:09:06.559 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 13:09:06.562 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 13:09:08.909 [INF] Ruta para guardar videos: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\wwwroot\videos\2025\04\30
+2025-04-30 13:09:09.825 [INF] Grabación iniciada. Archivo: C:\Users\William Ruiz\Desktop\ProyectosE-City\INDER\VIDEO_RECOLECTOR\wwwroot\videos\2025\04\30\video_13_09_08.avi
+2025-04-30 13:09:09.828 [WRN] La cámara ya está grabando
+2025-04-30 13:09:09.846 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 13:09:09.846 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 13:09:09.989 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 3415.7305ms
+2025-04-30 13:09:09.989 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 10211.2696ms
+2025-04-30 13:09:09.993 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 13:09:09.994 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 13:09:09.998 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 10716.1861ms
+2025-04-30 13:09:09.998 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 499 null application/json; charset=utf-8 3461.9588ms
+2025-04-30 13:09:10.992 [INF] Frames grabados: 30
+2025-04-30 13:09:11.984 [INF] Frames grabados: 60
+2025-04-30 13:09:12.975 [INF] Frames grabados: 90
+2025-04-30 13:09:13.984 [INF] Frames grabados: 120
+2025-04-30 13:09:14.975 [INF] Frames grabados: 150
+2025-04-30 13:09:15.967 [INF] Frames grabados: 180
+2025-04-30 13:09:16.976 [INF] Frames grabados: 210
+2025-04-30 13:09:17.968 [INF] Frames grabados: 240
+2025-04-30 13:09:18.959 [INF] Frames grabados: 270
+2025-04-30 13:09:19.968 [INF] Frames grabados: 300
+2025-04-30 13:09:20.961 [INF] Frames grabados: 330
+2025-04-30 13:09:21.951 [INF] Frames grabados: 360
+2025-04-30 13:09:22.959 [INF] Frames grabados: 390
+2025-04-30 13:09:23.951 [INF] Frames grabados: 420
+2025-04-30 13:09:24.943 [INF] Frames grabados: 450
+2025-04-30 13:09:25.951 [INF] Frames grabados: 480
+2025-04-30 13:09:26.943 [INF] Frames grabados: 510
+2025-04-30 13:09:27.935 [INF] Frames grabados: 540
+2025-04-30 13:09:28.944 [INF] Frames grabados: 570
+2025-04-30 13:09:29.935 [INF] Frames grabados: 600
+2025-04-30 13:09:30.928 [INF] Frames grabados: 630
+2025-04-30 13:09:31.937 [INF] Frames grabados: 660
+2025-04-30 13:09:32.929 [INF] Frames grabados: 690
+2025-04-30 13:09:33.921 [INF] Frames grabados: 720
+2025-04-30 13:09:34.927 [INF] Frames grabados: 750
+2025-04-30 13:09:35.920 [INF] Frames grabados: 780
+2025-04-30 13:09:36.911 [INF] Frames grabados: 810
+2025-04-30 13:09:37.904 [INF] Frames grabados: 840
+2025-04-30 13:09:38.912 [INF] Frames grabados: 870
+2025-04-30 13:09:39.903 [INF] Frames grabados: 900
+2025-04-30 13:09:40.896 [INF] Frames grabados: 930
+2025-04-30 13:09:41.452 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 13:09:41.481 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 13:09:41.483 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 13:09:41.489 [WRN] La cámara ya está grabando
+2025-04-30 13:09:41.491 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 13:09:41.494 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 4.9167ms
+2025-04-30 13:09:41.500 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 13:09:41.504 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 200 null application/json; charset=utf-8 52.3773ms
+2025-04-30 13:09:41.509 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/start - application/json; charset=utf-8 40
+2025-04-30 13:09:41.518 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 13:09:41.520 [INF] Route matched with {action = "StartCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StartCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 13:09:41.523 [WRN] La cámara ya está grabando
+2025-04-30 13:09:41.524 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 13:09:41.531 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR) in 7.4125ms
+2025-04-30 13:09:41.536 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StartCamera (VIDEO_RECOLECTOR)'
+2025-04-30 13:09:41.540 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/start - 200 null application/json; charset=utf-8 30.8805ms
+2025-04-30 13:09:41.903 [INF] Frames grabados: 960
+2025-04-30 13:09:42.895 [INF] Frames grabados: 990
+2025-04-30 13:09:43.889 [INF] Frames grabados: 1020
+2025-04-30 13:09:44.896 [INF] Frames grabados: 1050
+2025-04-30 13:09:45.888 [INF] Frames grabados: 1080
+2025-04-30 13:09:46.881 [INF] Frames grabados: 1110
+2025-04-30 13:09:47.889 [INF] Frames grabados: 1140
+2025-04-30 13:09:48.879 [INF] Frames grabados: 1170
+2025-04-30 13:09:49.871 [INF] Frames grabados: 1200
+2025-04-30 13:09:50.881 [INF] Frames grabados: 1230
+2025-04-30 13:09:51.871 [INF] Frames grabados: 1260
+2025-04-30 13:09:52.862 [INF] Frames grabados: 1290
+2025-04-30 13:09:53.871 [INF] Frames grabados: 1320
+2025-04-30 13:09:54.505 [INF] Request starting HTTP/1.1 POST http://localhost:5001/api/Camera/stop - application/json; charset=utf-8 12
+2025-04-30 13:09:54.510 [INF] Executing endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-30 13:09:54.516 [INF] Route matched with {action = "StopCamera", controller = "Camera"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StopCamera() on controller VIDEO_RECOLECTOR.Controllers.CameraController (VIDEO_RECOLECTOR).
+2025-04-30 13:09:54.521 [INF] Deteniendo grabación. Total frames: 1339
+2025-04-30 13:09:55.216 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 13:09:55.220 [INF] Executed action VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR) in 700.2383ms
+2025-04-30 13:09:55.223 [INF] Executed endpoint 'VIDEO_RECOLECTOR.Controllers.CameraController.StopCamera (VIDEO_RECOLECTOR)'
+2025-04-30 13:09:55.225 [INF] Request finished HTTP/1.1 POST http://localhost:5001/api/Camera/stop - 200 null application/json; charset=utf-8 720.8826ms

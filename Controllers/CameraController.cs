@@ -50,101 +50,51 @@ namespace VIDEO_RECOLECTOR.Controllers
             }
         }
 
+        [HttpPost("forcestop")]
+        public async Task<IActionResult> ForceStopCamera()
+        {
+            try
+            {
+                _logger.LogWarning("Forzando detención de la cámara");
+                
+                // Intentar detener la cámara normalmente primero
+                try
+                {
+                    await _cameraService.StopCamera();
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Error en el primer intento de detener la cámara durante forcestop");
+                }
+                
+                // Asegurarse de que los recursos se liberen incluso si StopCamera falló
+                if (_cameraService is CameraService cameraService)
+                {
+                    try
+                    {
+                        // Forzar la liberación de recursos
+                        cameraService.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError(ex, "Error al forzar la liberación de recursos");
+                    }
+                }
+                
+                return Ok(new { message = "Cámara forzada a detenerse" });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error al forzar la detención de la cámara");
+                return StatusCode(500, new { error = ex.Message });
+            }
+        }
+
         [HttpGet("status")]
         public IActionResult GetStatus()
         {
-            return Ok(new { isRecording = _cameraService.IsRecording });
+            var isRecording = _cameraService.IsRecording;
+            return Ok(new { isRecording });
         }
-
-        [HttpGet("videos")]
-        public IActionResult GetVideos()
-        {
-            try
-            {
-                var videosPath = Path.Combine(_env.WebRootPath, "videos");
-                if (!Directory.Exists(videosPath))
-                {
-                    return Ok(new { videos = new List<VideoInfo>() });
-                }
-
-                var videos = Directory.GetFiles(videosPath, "*.*", SearchOption.AllDirectories)
-                    .Where(file => file.EndsWith(".avi", StringComparison.OrdinalIgnoreCase))
-                    .Select(file =>
-                    {
-                        var fileInfo = new FileInfo(file);
-                        var relativePath = Path.GetRelativePath(videosPath, file).Replace('\\', '/');
-                        return new VideoInfo
-                        {
-                            FileName = fileInfo.Name,
-                            FilePath = relativePath,
-                            FileSize = fileInfo.Length,
-                            CreatedAt = fileInfo.CreationTime,
-                            DownloadUrl = $"/api/Camera/videos/{relativePath}"
-                        };
-                    })
-                    .OrderByDescending(v => v.CreatedAt)
-                    .ToList();
-
-                return Ok(new { videos });
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error al obtener la lista de videos");
-                return StatusCode(500, new { error = ex.Message });
-            }
-        }
-
-        [HttpGet("videos/{**filePath}")]
-        public IActionResult GetVideo(string filePath)
-        {
-            try
-            {
-                // Decodificar la URL y normalizar separadores
-                filePath = Uri.UnescapeDataString(filePath).Replace('\\', '/');
-                
-                // Construir la ruta usando el path relativo
-                var videoPath = Path.Combine(_env.WebRootPath, "videos", filePath);
-                
-                // Normalizar la ruta
-                videoPath = Path.GetFullPath(videoPath);
-
-                if (!System.IO.File.Exists(videoPath))
-                {
-                    return NotFound(new { 
-                        error = "Video no encontrado", 
-                        path = videoPath
-                    });
-                }
-
-                // Verificar que el archivo está dentro del directorio permitido
-                var videosDirectory = Path.GetFullPath(Path.Combine(_env.WebRootPath, "videos"));
-                if (!videoPath.StartsWith(videosDirectory))
-                {
-                    return BadRequest(new { error = "Ruta de archivo no válida" });
-                }
-
-                // Abrir el archivo como stream
-                var stream = new FileStream(videoPath, FileMode.Open, FileAccess.Read);
-                var fileName = Path.GetFileName(videoPath);
-
-                // Devolver el stream directamente
-                Response.Headers.Add("Content-Disposition", $"attachment; filename=\"{fileName}\"");
-                return File(stream, "video/x-msvideo", fileName);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error al obtener el video");
-                return StatusCode(500, new { error = ex.Message });
-            }
-        }
-    }
-
-    public class VideoInfo
-    {
-        public string FileName { get; set; } = "";
-        public string FilePath { get; set; } = "";
-        public string DownloadUrl { get; set; } = "";
-        public long FileSize { get; set; }
-        public DateTime CreatedAt { get; set; }
     }
 }
