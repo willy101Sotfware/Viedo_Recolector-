@@ -393,3 +393,7 @@ VIDEO_RECOLECTOR/**/*.log
 AppLogs/
 **/AppLogs/
 VIDEO_RECOLECTOR/AppLogs/
+# Logs específicos del proyecto Video Recolector
+AppLogs/
+*.txt
+!README.txt

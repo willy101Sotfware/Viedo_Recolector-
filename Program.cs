@@ -3,10 +3,22 @@ using VIDEO_RECOLECTOR.Models;
 using Serilog;
 using Serilog.Events;
 using Microsoft.OpenApi.Models;
+using Microsoft.Extensions.Hosting.WindowsServices;
 
 try
 {
-    var builder = WebApplication.CreateBuilder(args);
+    var builder = WebApplication.CreateBuilder(new WebApplicationOptions
+    {
+        Args = args,
+        ContentRootPath = WindowsServiceHelpers.IsWindowsService() 
+            ? AppContext.BaseDirectory : default
+    });
+
+    // Configurar la aplicación para ejecutarse como servicio de Windows
+    builder.Host.UseWindowsService(options =>
+    {
+        options.ServiceName = "VideoRecolectorService";
+    });
 
     // Configurar Serilog
     var logPath = Path.Combine(Directory.GetCurrentDirectory(), "AppLogs"); 
@@ -65,15 +77,12 @@ try
     var app = builder.Build();
 
     // Swagger siempre disponible, incluso en producción
-    if (app.Environment.IsDevelopment())
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
     {
-        app.UseSwagger();
-        app.UseSwaggerUI(c =>
-        {
-            c.SwaggerEndpoint("/swagger/v1/swagger.json", "Video Recolector API v1");
-            c.RoutePrefix = "swagger"; // Esto hace que Swagger UI sea la página principal
-        });
-    }
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Video Recolector API v1");
+        c.RoutePrefix = "swagger"; // Esto hace que Swagger UI sea la página principal
+    });
 
     app.UseHttpsRedirection();
     app.UseStaticFiles(); 
@@ -99,7 +108,7 @@ try
         Log.Information($"Creado directorio base de videos: {videoPath}");
     }
 
-    Log.Information("Iniciando aplicación Video Recolector");
+    Log.Information("Iniciando aplicación Video Recolector como servicio de Windows");
     app.Run();
 }
 catch (Exception ex)
