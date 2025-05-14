@@ -57,7 +57,7 @@ namespace VIDEO_RECOLECTOR.Controllers
             {
                 _logger.LogWarning("Forzando detención de la cámara");
                 
-                // Intentar detener la cámara normalmente primero
+            
                 try
                 {
                     await _cameraService.StopCamera();
@@ -67,12 +67,11 @@ namespace VIDEO_RECOLECTOR.Controllers
                     _logger.LogError(ex, "Error en el primer intento de detener la cámara durante forcestop");
                 }
                 
-                // Asegurarse de que los recursos se liberen incluso si StopCamera falló
+              
                 if (_cameraService is CameraService cameraService)
                 {
                     try
                     {
-                        // Forzar la liberación de recursos
                         cameraService.Dispose();
                     }
                     catch (Exception ex)

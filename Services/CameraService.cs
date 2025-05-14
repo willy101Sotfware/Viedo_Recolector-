@@ -36,34 +36,45 @@ namespace VIDEO_RECOLECTOR.Services
         {
             _configuration = configuration;
             var videoPath = _configuration.GetValue<string>("CameraSettings:VideoStoragePath") ?? "videos";
-            _baseVideoDirectory = Path.Combine(env.WebRootPath, videoPath);
+            
+            
+            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            string wwwrootPath = Path.Combine(baseDirectory, "wwwroot");
+            
+           
+            if (!Directory.Exists(wwwrootPath))
+            {
+                Directory.CreateDirectory(wwwrootPath);
+                logger.LogInformation($"Creado directorio wwwroot: {wwwrootPath}");
+            }
+            
+            _baseVideoDirectory = Path.Combine(wwwrootPath, videoPath);
+            
+            if (!Directory.Exists(_baseVideoDirectory))
+            {
+                Directory.CreateDirectory(_baseVideoDirectory);
+                logger.LogInformation($"Creado directorio base de videos: {_baseVideoDirectory}");
+            }
+            
             _logger = logger;
             _disposed = false;
+            
+            _logger.LogInformation($"Directorio base para videos configurado en: {_baseVideoDirectory}");
         }
 
         private string CreateVideoDirectory()
         {
             try
             {
-                // Obtener la fecha actual
                 var now = DateTime.Now;
                 
-                // Crear la estructura de directorios año/mes/día
                 string yearStr = now.Year.ToString();
                 string monthStr = now.Month.ToString("00");
                 string dayStr = now.Day.ToString("00");
                 
-                // Construir las rutas
                 string yearPath = Path.Combine(_baseVideoDirectory, yearStr);
                 string monthPath = Path.Combine(yearPath, monthStr);
                 string dayPath = Path.Combine(monthPath, dayStr);
-                
-                // Crear los directorios solo si no existen
-                if (!Directory.Exists(_baseVideoDirectory))
-                {
-                    Directory.CreateDirectory(_baseVideoDirectory);
-                    _logger.LogInformation($"Creado directorio base: {_baseVideoDirectory}");
-                }
                 
                 if (!Directory.Exists(yearPath))
                 {
@@ -90,7 +101,6 @@ namespace VIDEO_RECOLECTOR.Services
             {
                 _logger.LogError($"Error al crear directorios: {ex.Message}");
                 
-                // En caso de error, intentar usar el directorio base
                 if (!Directory.Exists(_baseVideoDirectory))
                 {
                     try
@@ -99,7 +109,6 @@ namespace VIDEO_RECOLECTOR.Services
                     }
                     catch
                     {
-                        // Si no se puede crear ni el directorio base, usar el directorio actual
                         return Directory.GetCurrentDirectory();
                     }
                 }
@@ -115,7 +124,6 @@ namespace VIDEO_RECOLECTOR.Services
                 throw new ObjectDisposedException(nameof(CameraService));
             }
 
-            // Usar semáforo para evitar llamadas concurrentes
             await _semaphore.WaitAsync();
 
             try
@@ -126,14 +134,12 @@ namespace VIDEO_RECOLECTOR.Services
                     return;
                 }
 
-                // Detener cualquier grabación existente primero
                 await StopCameraInternal();
 
                 _logger.LogInformation("Iniciando grabación...");
 
                 try
                 {
-                    // Crear la captura de video con manejo de errores
                     _capture = null;
                     
                     try
@@ -151,7 +157,6 @@ namespace VIDEO_RECOLECTOR.Services
                         throw new Exception("No se pudo abrir la cámara");
                     }
 
-                    // Configurar la resolución y el framerate
                     int width = 640;
                     int height = 480;
                     double fps = 30;
@@ -162,7 +167,6 @@ namespace VIDEO_RECOLECTOR.Services
                         height = (int)_capture.Get(VideoCaptureProperties.FrameHeight);
                         fps = _capture.Get(VideoCaptureProperties.Fps);
                         
-                        // Asegurarse de que los valores sean razonables
                         if (width <= 0) width = 640;
                         if (height <= 0) height = 480;
                         if (fps <= 0) fps = 30;
@@ -176,7 +180,6 @@ namespace VIDEO_RECOLECTOR.Services
                     var timestamp = DateTime.Now.ToString("HH_mm_ss");
                     _currentVideoPath = Path.Combine(videoDir, $"video_{timestamp}.avi");
 
-                    // Crear el VideoWriter con manejo de errores
                     _writer = null;
                     
                     try
@@ -206,7 +209,6 @@ namespace VIDEO_RECOLECTOR.Services
                     _isRecording = true;
                     _frameCount = 0;
 
-                    // Iniciar la grabación en segundo plano
                     _recordingCts = new CancellationTokenSource();
                     var token = _recordingCts.Token;
 
@@ -247,7 +249,7 @@ namespace VIDEO_RECOLECTOR.Services
                                                 {
                                                     _logger.LogInformation($"Frames grabados: {_frameCount}");
                                                 }
-                                                errorCount = 0; // Resetear contador de errores
+                                                errorCount = 0; 
                                             }
                                             catch (Exception ex)
                                             {
@@ -257,14 +259,13 @@ namespace VIDEO_RECOLECTOR.Services
                                         }
                                     }
                                     
-                                    // Pequeña pausa para evitar uso excesivo de CPU
                                     Thread.Sleep(10);
                                 }
                                 catch (Exception ex)
                                 {
                                     _logger.LogError($"Error en el bucle de grabación: {ex.Message}");
                                     errorCount++;
-                                    Thread.Sleep(100); // Pausa más larga después de un error
+                                    Thread.Sleep(100); 
                                 }
                             }
                             
@@ -305,7 +306,7 @@ namespace VIDEO_RECOLECTOR.Services
                 
                 if (_recordingTask != null)
                 {
-                    // Esperar a que termine la tarea de grabación (máximo 2 segundos)
+                   
                     await Task.WhenAny(_recordingTask, Task.Delay(2000));
                 }
             }
@@ -326,7 +327,7 @@ namespace VIDEO_RECOLECTOR.Services
                 throw new ObjectDisposedException(nameof(CameraService));
             }
 
-            // Usar semáforo para evitar llamadas concurrentes
+      
             await _semaphore.WaitAsync();
 
             try
